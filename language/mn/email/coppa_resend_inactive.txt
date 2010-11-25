@@ -2,11 +2,54 @@ Subject: Welcome to "{SITENAME}"
 
 {WELCOME_MSG}
 
-In compliance with the COPPA, your account is currently inactive.
+In compliance with the COPPA your account is currently inactive.
 
-Please print this message and have your parent or guardian sign and date it. Then fax it to:
+Please print this message out and have your parent or guardian sign and date it. Then fax it to:
+
+{FAX_INFO}Subject: "{SITENAME}" forumd tavtai morilno uu.
+
+{WELCOME_MSG}
+
+COPPA-tai holbogdoh shaltgaanaar tani burtgel idevhigui baisaar baina.
+
+Ta ene medeelliig hevlej avaad etseg eh yumuu asran hamgaalagchiihaa gariin usgiig ognootoi ni oruulaad daraah hayagruu fax ilgeene uu:
 
 {FAX_INFO}
+
+Esvel ene hayagruu email ilgeej bolno:
+
+{MAIL_INFO}
+
+------------------------------ Taslah heseg ------------------------------
+"{SITENAME}" - {U_BOARD} oroltsoh handaltiin erhuud
+
+Hereglegchiin ner: {USERNAME}
+Nuuts ug: {PASSWORD}
+E-mail: {EMAIL_ADDRESS}
+
+Bi manai huuhdiin tuhai medeelsen enehuu medeelliig unshsan bogood ene mayagaar enehuu medeelliig hadgalah erhiig ene "{SITENAME}" -d olgoj baina. 
+Bi enehuu medeelliig hediid ch gesen nuuts ug oruulan oorchilj bolno gedgiig oilgoloo. 
+Bi ene medeelliig "{SITENAME}" -s ustguulahiin tuld hediid ch huselt gargaj bolohiig oilgoloo.
+
+
+Etseg eh yumuu asran hamgaalagch 
+(neree oruulna uu): _____________________
+
+(gariin useg end): __________________ 
+
+Ognoo: _______________
+
+------------------------------ Taslah heseg ------------------------------
+
+
+Deerh medeelliig fax yumuu erdiin email-r huleen avsnaar tanii burtgel idevhijih bolno6
+
+Tanii nuuts ug manai medeelliin sand kodlogdon orson bogood bid tand uuniig medej ogch chadahgui gedgiig anhaarna uu! Gehdee ta nuuts ugee martsan tohioldold burtgelee idevhijuulsen shig shine nuuts ug huleen avch bolno.
+
+Burtuulsend bayarlalaa!
+
+{EMAIL_SIG}
+
 
 OR mail it to:
 
@@ -33,9 +76,9 @@ Date: _______________
 ------------------------------ CUT HERE ------------------------------
 
 
-Once the administrator has received the above form via fax or regular mail, your account will be activated.
+Once the administrator has received the above form via fax or regular mail your account will be activated.
 
-Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.
+Please do not forget your password as it has been encrypted in our database and we cannot retrieve it for you. However, should you forget your password you can request a new one which will be activated in the same way as this account.
 
 Thank you for registering.
 

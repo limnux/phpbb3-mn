@@ -1,17 +1,18 @@
-Subject: Welcome to "{SITENAME}"
+Subject: "{SITENAME}" forumd tavtai morilno uu.
 
 {WELCOME_MSG}
 
-Please keep this e-mail for your records. Your account information is as follows:
+Enehuu email-iig daraa ni hereg bolno gesen uudnees hadgalna uu. Tanii burtgeliin medeelel:
 
 ----------------------------
-Username: {USERNAME}
+Hereglegchiin ner: {USERNAME}
+Nuuts ug: {PASSWORD}
 
 Board URL: {U_BOARD}
 ----------------------------
 
-Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.
+Tanii nuuts ug manai medeelliin sand kodlogdon orson bogood bid tand uuniig medej ogch chadahgui gedgiig anhaarna uu! Gehdee ta nuuts ugee martsan tohioldold burtgelee idevhijuulsen shig shine nuuts ug huleen avch bolno.
 
-Thank you for registering.
+Burtuulsend bayarlalaa!
 
 {EMAIL_SIG}

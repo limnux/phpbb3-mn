@@ -1,42 +1,43 @@
-Subject: Welcome to "{SITENAME}"
+Subject: "{SITENAME}" forumd tavtai morilno uu.
 
 {WELCOME_MSG}
 
-In compliance with the COPPA, your account is currently inactive.
+COPPA-tai holbogdoh shaltgaanaar tani burtgel idevhigui baisaar baina.
 
-Please print this message and have your parent or guardian sign and date it. Then fax it to:
+Ta ene medeelliig hevlej avaad etseg eh yumuu asran hamgaalagchiihaa gariin usgiig ognootoi ni oruulaad daraah hayagruu fax ilgeene uu:
 
 {FAX_INFO}
 
-OR mail it to:
+Esvel ene hayagruu email ilgeej bolno:
 
 {MAIL_INFO}
 
------------------------------- CUT HERE ------------------------------
-Permission to participate at "{SITENAME}" - {U_BOARD}
+------------------------------ Taslah heseg ------------------------------
+"{SITENAME}" - {U_BOARD} oroltsoh handaltiin erhuud
 
-Username: {USERNAME}
+Hereglegchiin ner: {USERNAME}
+Nuuts ug: {PASSWORD}
 E-mail: {EMAIL_ADDRESS}
 
-I HAVE REVIEWED THE INFORMATION PROVIDED BY MY CHILD AND HEREBY GRANT PERMISSION TO "{SITENAME}" TO STORE THIS INFORMATION. 
-I UNDERSTAND THIS INFORMATION CAN BE CHANGED AT ANY TIME BY ENTERING A PASSWORD. 
-I UNDERSTAND THAT I MAY REQUEST FOR THIS INFORMATION TO BE REMOVED FROM "{SITENAME}" AT ANY TIME.
+Bi manai huuhdiin tuhai medeelsen enehuu medeelliig unshsan bogood ene mayagaar enehuu medeelliig hadgalah erhiig ene "{SITENAME}" -d olgoj baina. 
+Bi enehuu medeelliig hediid ch gesen nuuts ug oruulan oorchilj bolno gedgiig oilgoloo. 
+Bi ene medeelliig "{SITENAME}" -s ustguulahiin tuld hediid ch huselt gargaj bolohiig oilgoloo.
 
 
-Parent or guardian 
-(print your name here): _____________________
+Etseg eh yumuu asran hamgaalagch 
+(neree oruulna uu): _____________________
 
-(sign here): __________________ 
+(gariin useg end): __________________ 
 
-Date: _______________
+Ognoo: _______________
 
------------------------------- CUT HERE ------------------------------
+------------------------------ Taslah heseg ------------------------------
 
 
-Once the administrator has received the above form via fax or regular mail, your account will be activated.
+Deerh medeelliig fax yumuu erdiin email-r huleen avsnaar tanii burtgel idevhijih bolno6
 
-Your password has been securely stored in our database and cannot be retrieved. In the event that it is forgotten, you will be able to reset it using the email address associated with your account.
+Tanii nuuts ug manai medeelliin sand kodlogdon orson bogood bid tand uuniig medej ogch chadahgui gedgiig anhaarna uu! Gehdee ta nuuts ugee martsan tohioldold burtgelee idevhijuulsen shig shine nuuts ug huleen avch bolno.
 
-Thank you for registering.
+Burtuulsend bayarlalaa!
 
 {EMAIL_SIG}

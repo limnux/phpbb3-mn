@@ -1,19 +1,19 @@
-Subject: Topic reply notification - "{TOPIC_TITLE}"
+Subject: Sedevt hariulsan tuhai - "{TOPIC_TITLE}"
 
-Hello {USERNAME},
+Sain uu {USERNAME},
 
-You are receiving this notification because you are watching the topic, "{TOPIC_TITLE}" at "{SITENAME}". This topic has received a reply since your last visit. You can use the following link to view the replies made, no more notifications will be sent until you visit the topic.
+Ta "{SITENAME}" dahi "{TOPIC_TITLE}" bichlegiig manaj baigaa tul ene email-g huleen avch baina. Ta habgiin suuld zochilsnoos hoish ene sedevt hariult bichigdlee. Daraahi holboosoor damjin shineer orson bichleguudiig unshij chadah bogood ta tuhai sedevruu oroh hurtel dahij uuntei holbootoi medeelel irehgui.
 
-If you want to view the newest post made since your last visit, click the following link:
+Shine bichlegiig uzeh bol end darna uu:
 {U_NEWEST_POST}
 
-If you want to view the topic, click the following link:
+Sedeviig uzehiig husvel end darna uu:
 {U_TOPIC}
 
-If you want to view the forum, click the following link:
+forumiig uzeh bol end darna uu:
 {U_FORUM}
 
-If you no longer wish to watch this topic you can either click the "Unsubscribe topic" link found at the bottom of the topic above, or by clicking the following link:
+Ta ene sedeviig manahaa bolihiig husvel tuhai sedviin dood hesegt baih "Ene sedeviig managhaa bolih" holboos esvel daraah hayagaar damjin orno uu:
 
 {U_STOP_WATCHING_TOPIC}
 

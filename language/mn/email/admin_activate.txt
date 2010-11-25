@@ -1,13 +1,13 @@
-Subject: Activate user account
+Subject: Shine hereglegchiin burtgel
 
-Hello,
+Sain baina uu,
 
-The account owned by "{USERNAME}" has been deactivated or newly created, you should check the details of this user (if required) and handle it appropriately.
+ "{USERNAME}" iin hereglej bui burtgel idevhigui bolson esvel shineer uusgegdsen, ta ene hereglegchiin tuhai delgerengui medeelliig shalgaj (shaardlagatai bol) 
 
-Use this link to view the user's profile:
+End darj hereglegchiin medeelliig uzne uu:
 {U_USER_DETAILS}
 
-Use this link to activate the account:
+End darj hereglegchiin burtgeliig idevhijuulne uu:
 {U_ACTIVATE}
 
 

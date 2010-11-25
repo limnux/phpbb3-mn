@@ -1,10 +1,10 @@
 <?php
-/**
+/** 
 *
-* viewforum [English]
+* viewforum [Mongolian]
 *
 * @package language
-* @version $Id: viewforum.php 8479 2008-03-29 00:22:48Z naderman $
+* @version $Id: viewforum.php,v 1.18 2007/10/04 15:07:24 B.Munkh-Erdene $
 * @copyright (c) 2005 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -36,31 +36,31 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ACTIVE_TOPICS'			=> 'Active topics',
-	'ANNOUNCEMENTS'			=> 'Announcements',
+	'ACTIVE_TOPICS'			=> 'Идэвхитэй сэдэвүүд',
+	'ANNOUNCEMENTS'			=> 'Зарлалууд',
 
-	'FORUM_PERMISSIONS'		=> 'Forum permissions',
+	'FORUM_PERMISSIONS'		=> 'Форумд хандах эрх',
 
-	'ICON_ANNOUNCEMENT'		=> 'Announcement',
-	'ICON_STICKY'			=> 'Sticky',
+	'ICON_ANNOUNCEMENT'		=> 'Зарлал',
+	'ICON_STICKY'			=> 'Наалттай',
 
-	'LOGIN_NOTIFY_FORUM'	=> 'You have been notified about this forum, please login to view it.',
+	'LOGIN_NOTIFY_FORUM'	=> 'Сэдвийг уншихын тулд нэвтрэн орно уу.',
 
-	'MARK_TOPICS_READ'		=> 'Mark topics read',
+	'MARK_TOPICS_READ'		=> 'Уншсан болгож тэмдэглэх',
+	
+	'NEW_POSTS_HOT'			=> 'Шинэ бичлэг [ Түгээмэл]',
+	'NEW_POSTS_LOCKED'		=> 'Шинэ бичлэг [ Цоожтой ]',
+	'NO_NEW_POSTS_HOT'		=> 'Шинэ бичлэг алга [ Түгээмэл]',
+	'NO_NEW_POSTS_LOCKED'	=> 'Шинэ бичлэг алга [ Цоожтой ]',
+	'NO_READ_ACCESS'		=> 'Та нэвтрэн орж форумын сэдвүүдийг уншина уу.',
 
-	'NEW_POSTS_HOT'			=> 'New posts [ Popular ]',
-	'NEW_POSTS_LOCKED'		=> 'New posts [ Locked ]',
-	'NO_NEW_POSTS_HOT'		=> 'No new posts [ Popular ]',
-	'NO_NEW_POSTS_LOCKED'	=> 'No new posts [ Locked ]',
-	'NO_READ_ACCESS'		=> 'You do not have the required permissions to read topics within this forum.',
+	'POST_FORUM_LOCKED'		=> 'Форум цоожтой',
 
-	'POST_FORUM_LOCKED'		=> 'Forum is locked',
+	'TOPICS_MARKED'			=> 'Форумын сэдэвүүдийг уншсан болгож тэмдэглэлээ',
 
-	'TOPICS_MARKED'			=> 'The topics for this forum have now been marked read.',
-
-	'VIEW_FORUM'			=> 'View forum',
-	'VIEW_FORUM_TOPIC'		=> '1 topic',
-	'VIEW_FORUM_TOPICS'		=> '%d topics',
+	'VIEW_FORUM'			=> 'Форум үзэх',
+	'VIEW_FORUM_TOPIC'		=> '1 сэдэв',
+	'VIEW_FORUM_TOPICS'		=> '%d сэдэв',
 ));
 
 ?>

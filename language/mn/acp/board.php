@@ -4,7 +4,7 @@
 * acp_board [English]
 *
 * @package language
-* @version $Id: board.php 10080 2009-08-31 14:57:04Z nickvergessen $
+* @version $Id: board.php 8479 2008-03-29 00:22:48Z naderman $
 * @copyright (c) 2005 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -70,10 +70,6 @@ $lang = array_merge($lang, array(
 	'ALLOW_NO_CENSORS'			=> 'Allow disabling of word censoring',
 	'ALLOW_NO_CENSORS_EXPLAIN'	=> 'Users can choose to disable the automatic word censoring of posts and private messages.',
 	'ALLOW_PM_ATTACHMENTS'		=> 'Allow attachments in private messages',
-	'ALLOW_PM_REPORT'			=> 'Allow users to report private messages',
-	'ALLOW_PM_REPORT_EXPLAIN'	=> 'If this setting is enabled, users have the option of reporting a private message they have received or sent to the board’s moderators. These private messages will then be visible in the Moderator Control Panel.',
-	'ALLOW_QUICK_REPLY'			=> 'Allow quick reply',
-	'ALLOW_QUICK_REPLY_EXPLAIN'	=> 'This setting defines if quick reply is enabled or not. If this setting is enabled, forums need to have their quick reply option enabled too.',
 	'ALLOW_SIG'					=> 'Allow signatures',
 	'ALLOW_SIG_BBCODE'			=> 'Allow BBCode in user signatures',
 	'ALLOW_SIG_FLASH'			=> 'Allow use of <code>[FLASH]</code> BBCode tag in user signatures',
@@ -91,13 +87,9 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_AVATAR_SETTINGS_EXPLAIN'	=> 'Avatars are generally small, unique images a user can associate with themselves. Depending on the style they are usually displayed below the username when viewing topics. Here you can determine how users can define their avatars. Please note that in order to upload avatars you need to have created the directory you name below and ensure it can be written to by the web server. Please also note that file size limits are only imposed on uploaded avatars, they do not apply to remotely linked images.',
 
-	'ALLOW_AVATARS'					=> 'Enable avatars',
-	'ALLOW_AVATARS_EXPLAIN'			=> 'Allow general usage of avatars;<br />If you disable avatars in general or avatars of a certain mode, the disabled avatars will no longer be shown on the board, but users will still be able to download their own avatars in the User Control Panel.',
 	'ALLOW_LOCAL'					=> 'Enable gallery avatars',
 	'ALLOW_REMOTE'					=> 'Enable remote avatars',
 	'ALLOW_REMOTE_EXPLAIN'			=> 'Avatars linked to from another website.',
-	'ALLOW_REMOTE_UPLOAD'			=> 'Enable remote avatar uploading',
-	'ALLOW_REMOTE_UPLOAD_EXPLAIN'	=> 'Allow uploading of avatars from another website.',
 	'ALLOW_UPLOAD'					=> 'Enable avatar uploading',
 	'AVATAR_GALLERY_PATH'			=> 'Avatar gallery path',
 	'AVATAR_GALLERY_PATH_EXPLAIN'	=> 'Path under your phpBB root directory for pre-loaded images, e.g. <samp>images/avatars/gallery</samp>.',
@@ -121,7 +113,6 @@ $lang = array_merge($lang, array(
 	'ALLOW_FORWARD_PM'			=> 'Allow forwarding of private messages',
 	'ALLOW_IMG_PM'				=> 'Allow use of <code>[IMG]</code> BBCode tag',
 	'ALLOW_MASS_PM'				=> 'Allow sending of private messages to multiple users and groups',
-	'ALLOW_MASS_PM_EXPLAIN'		=> 'Sending to groups can be adjusted per group within the group settings page.',
 	'ALLOW_PRINT_PM'			=> 'Allow print view in private messaging',
 	'ALLOW_QUOTE_PM'			=> 'Allow quotes in private messages',
 	'ALLOW_SIG_PM'				=> 'Allow signature in private messages',
@@ -136,8 +127,6 @@ $lang = array_merge($lang, array(
 	'HOLD_NEW_MESSAGES'			=> 'Hold new messages',
 	'PM_EDIT_TIME'				=> 'Limit editing time',
 	'PM_EDIT_TIME_EXPLAIN'		=> 'Limits the time available to edit a private message not already delivered. Setting the value to 0 disables this behaviour.',
-	'PM_MAX_RECIPIENTS'			=> 'Maximum number of allowed recipients',
-	'PM_MAX_RECIPIENTS_EXPLAIN'	=> 'The maximum number of allowed recipients in a private message. If 0 is entered, an unlimited number is allowed. This setting can be adjusted for every group within the group settings page.',
 ));
 
 // Post Settings
@@ -150,10 +139,8 @@ $lang = array_merge($lang, array(
 
 	'BUMP_INTERVAL'					=> 'Bump interval',
 	'BUMP_INTERVAL_EXPLAIN'			=> 'Number of minutes, hours or days between the last post to a topic and the ability to bump this topic.',
-	'CHAR_LIMIT'					=> 'Maximum characters per post/message',
-	'CHAR_LIMIT_EXPLAIN'			=> 'The number of characters allowed within a post/private message. Set to 0 for unlimited characters.',
-	'DELETE_TIME'					=> 'Limit deleting time',
-	'DELETE_TIME_EXPLAIN'			=> 'Limits the time available to delete a new post. Setting the value to 0 disables this behaviour.',
+	'CHAR_LIMIT'					=> 'Maximum characters per post',
+	'CHAR_LIMIT_EXPLAIN'			=> 'The number of characters allowed within a post. Set to 0 for unlimited characters.',
 	'DISPLAY_LAST_EDITED'			=> 'Display last edited time information',
 	'DISPLAY_LAST_EDITED_EXPLAIN'	=> 'Choose if the last edited by information to be displayed on posts.',
 	'EDIT_TIME'						=> 'Limit editing time',
@@ -171,15 +158,12 @@ $lang = array_merge($lang, array(
 	'MAX_POST_IMG_WIDTH_EXPLAIN'	=> 'Maximum width of an image/flash file in postings. Set to 0 for unlimited size.',
 	'MAX_POST_URLS'					=> 'Maximum links per post',
 	'MAX_POST_URLS_EXPLAIN'			=> 'Maximum number of URLs in a post. Set to 0 for unlimited links.',
-	'MIN_CHAR_LIMIT'				=> 'Minimum characters per post/message',
-	'MIN_CHAR_LIMIT_EXPLAIN'		=> 'The minimum number of characters the user need to enter within a post/private message.',
 	'POSTING'						=> 'Posting',
 	'POSTS_PER_PAGE'				=> 'Posts per page',
 	'QUOTE_DEPTH_LIMIT'				=> 'Maximum nested quotes per post',
 	'QUOTE_DEPTH_LIMIT_EXPLAIN'		=> 'Maximum number of nested quotes in a post. Set to 0 for unlimited depth.',
 	'SMILIES_LIMIT'					=> 'Maximum smilies per post',
 	'SMILIES_LIMIT_EXPLAIN'			=> 'Maximum number of smilies in a post. Set to 0 for unlimited smilies.',
-	'SMILIES_PER_PAGE'				=> 'Smilies per page',
 	'TOPICS_PER_PAGE'				=> 'Topics per page',
 ));
 
@@ -205,13 +189,8 @@ $lang = array_merge($lang, array(
 $lang = array_merge($lang, array(
 	'ACP_REGISTER_SETTINGS_EXPLAIN'		=> 'Here you are able to define registration and profile related settings.',
 
-	'ACC_ACTIVATION'				=> 'Account activation',
-	'ACC_ACTIVATION_EXPLAIN'		=> 'This determines whether users have immediate access to the board or if confirmation is required. You can also completely disable new registrations.',
-	'NEW_MEMBER_POST_LIMIT'			=> 'New member post limit',
-	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'New members are within the <em>Newly Registered Users</em> group until they reach this number of posts. You can use this group to keep them from using the PM system or to review their posts. <strong>A value of 0 disables this feature.</strong>',
-	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Set Newly Registered Users group to default',
-	'NEW_MEMBER_GROUP_DEFAULT_EXPLAIN'	=> 'If set to yes and a new member post limit is specified newly registered users will be not only put into the <em>Newly Registered Users</em> group, but this group also being their default one. This may come in handy if you want to assign a group default rank and/or avatar the user then inherits.',
-
+	'ACC_ACTIVATION'			=> 'Account activation',
+	'ACC_ACTIVATION_EXPLAIN'	=> 'This determines whether users have immediate access to the board or if confirmation is required. You can also completely disable new registrations.',
 	'ACC_ADMIN'					=> 'By Admin',
 	'ACC_DISABLE'				=> 'Disable',
 	'ACC_NONE'					=> 'None',
@@ -244,45 +223,11 @@ $lang = array_merge($lang, array(
 	'USERNAME_LENGTH_EXPLAIN'	=> 'Minimum and maximum number of characters in usernames.',
 ));
 
-// Feeds
-$lang = array_merge($lang, array(
-	'ACP_FEED_MANAGEMENT'				=> 'General Syndication Feeds settings',
-	'ACP_FEED_MANAGEMENT_EXPLAIN'		=> 'This Module makes available various ATOM Feeds, parsing any BBCode in posts to make them readable in external feeds.',
-
-	'ACP_FEED_ENABLE'					=> 'Enable Feeds',
-	'ACP_FEED_ENABLE_EXPLAIN'			=> 'Turns on or off ATOM Feeds for the entire board.<br />Disabling this switches off all Feeds, no matter how the options below are set.',
-	'ACP_FEED_LIMIT'					=> 'Number of items',
-	'ACP_FEED_LIMIT_EXPLAIN'			=> 'The maximum number of feed items to display.',
-
-	'ACP_FEED_OVERALL_FORUMS'			=> 'Enable overall forums feed',
-	'ACP_FEED_OVERALL_FORUMS_EXPLAIN'	=> 'This feed displays the latest posts from all forums topics.',
-	'ACP_FEED_OVERALL_FORUMS_LIMIT'		=> 'Number of items per page to display in the forums feed',
-
-	'ACP_FEED_OVERALL_TOPIC'			=> 'Enable overall topics feed',
-	'ACP_FEED_OVERALL_TOPIC_EXPLAIN'	=> 'Enables the “All Topics” feed',
-	'ACP_FEED_OVERALL_TOPIC_LIMIT'		=> 'Number of items per page to display in the topics feed',
-	'ACP_FEED_FORUM'					=> 'Enable Per-Forum Feeds',
-	'ACP_FEED_FORUM_EXPLAIN'			=> 'Single forum new posts.',
-	'ACP_FEED_TOPIC'					=> 'Enable Per-Topic Feeds',
-	'ACP_FEED_TOPIC_EXPLAIN'			=> 'Single topics new posts.',
-	'ACP_FEED_NEWS'						=> 'News Feeds',
-	'ACP_FEED_NEWS_EXPLAIN'				=> 'Pull the first post from these forums. Select no forums to disable news feed.<br />Select multiple forums by holding <samp>CTRL</samp> and clicking.',
-
-	'ACP_FEED_GENERAL'					=> 'General Feed Settings',
-
-	'ACP_FEED_ITEM_STATISTICS'			=> 'Item statistics',
-	'ACP_FEED_ITEM_STATISTICS_EXPLAIN'	=> 'Display individual statistics underneath feed items<br />(Posted by, date and time, Replies, Views)',
-	'ACP_FEED_EXCLUDE_ID'				=> 'Exclude these forums',
-	'ACP_FEED_EXCLUDE_ID_EXPLAIN'		=> 'Content from these will be <strong>not included in feeds</strong>. Select no forum to pull data from all forums.<br />Select/Deselect multiple forums by holding <samp>CTRL</samp> and clicking.',
-));
-
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
-	'ACP_VC_SETTINGS_EXPLAIN'				=> 'Here you can select and configure CAPTCHA plugins, which implement various ways to reject registration attempts from so-called spambots.',
-	'AVAILABLE_CAPTCHAS'					=> 'Available plugins',
-	'CAPTCHA_UNAVAILABLE'					=> 'The CAPTCHA cannot be selected as its requirements are not met.',
+	'ACP_VC_SETTINGS_EXPLAIN'		=> 'Here you are able to define visual confirmation defaults and CAPTCHA settings.',
+
 	'CAPTCHA_GD'							=> 'GD CAPTCHA',
-	'CAPTCHA_GD_3D'							=> 'GD 3D Captcha',
 	'CAPTCHA_GD_FOREGROUND_NOISE'			=> 'GD CAPTCHA foreground noise',
 	'CAPTCHA_GD_EXPLAIN'					=> 'Use GD to make a more advanced CAPTCHA.',
 	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Use foreground noise to make the GD based CAPTCHA harder.',
@@ -290,32 +235,13 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Use lower settings of this to make the GD based CAPTCHA harder. 0 will disable x-axis background noise.',
 	'CAPTCHA_GD_Y_GRID'						=> 'GD CAPTCHA background noise y-axis',
 	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Use lower settings of this to make the GD based CAPTCHA harder. 0 will disable y-axis background noise.',
-	'CAPTCHA_GD_WAVE'						=> 'GD CAPTCHA wave distortion',
-	'CAPTCHA_GD_WAVE_EXPLAIN'				=> 'This applies a wave distortion to the CAPTCHA.',
-	'CAPTCHA_GD_3D_NOISE'					=> 'Add 3D-noise objects',
-	'CAPTCHA_GD_3D_NOISE_EXPLAIN'			=> 'This adds additional objects to the CAPTCHA, over the letters.',
-	'CAPTCHA_GD_FONTS'						=> 'Use different fonts',
-	'CAPTCHA_GD_FONTS_EXPLAIN'				=> 'This setting controls how many different letter shapes are used. You can just use the default shapes or introduce altered letters. Adding lowercase letters is also possible.',
-	'CAPTCHA_FONT_DEFAULT'					=> 'Default',
-	'CAPTCHA_FONT_NEW'						=> 'New Shapes',
-	'CAPTCHA_FONT_LOWER'					=> 'Also use lowercase',
-	'CAPTCHA_NO_GD'							=> 'CAPTCHA without GD',
+
 	'CAPTCHA_PREVIEW_MSG'					=> 'Your changes to the visual confirmation setting were not saved. This is just a preview.',
-	'CAPTCHA_PREVIEW_EXPLAIN'				=> 'The CAPTCHA as it would look like using the current selection.',
-
-	'CAPTCHA_SELECT'						=> 'Installed CAPTCHA plugins',
-	'CAPTCHA_SELECT_EXPLAIN'				=> 'The dropdown holds the CAPTCHA plugins recognized by the board. Gray entries are not available right now and might need configuration prior to use.',
-	'CAPTCHA_CONFIGURE'						=> 'Configure CAPTCHAs',
-	'CAPTCHA_CONFIGURE_EXPLAIN'				=> 'Change the settings for the selected CAPTCHA.',
-	'CONFIGURE'								=> 'Configure',
-	'CAPTCHA_NO_OPTIONS'					=> 'This CAPTCHA has no configuration options.',
-
+	'CAPTCHA_PREVIEW_EXPLAIN'				=> 'The CAPTCHA as it will look like using the current settings. Use the preview button to refresh. Note that captchas are randomized and will differ from one view to the next.',
 	'VISUAL_CONFIRM_POST'					=> 'Enable visual confirmation for guest postings',
 	'VISUAL_CONFIRM_POST_EXPLAIN'			=> 'Requires anonymous users to enter a random code matching an image to help prevent mass postings.',
 	'VISUAL_CONFIRM_REG'					=> 'Enable visual confirmation for registrations',
 	'VISUAL_CONFIRM_REG_EXPLAIN'			=> 'Requires new users to enter a random code matching an image to help prevent mass registrations.',
-	'VISUAL_CONFIRM_REFRESH'				=> 'Enable users to refresh the confirmation image',
-	'VISUAL_CONFIRM_REFRESH_EXPLAIN'		=> 'Allows users to request new confirmation codes, if they are unable to solve the VC during registration. Some plugins might not support this option.',
 ));
 
 // Cookie Settings
@@ -352,7 +278,7 @@ $lang = array_merge($lang, array(
 	'YES_ANON_READ_MARKING'			=> 'Enable topic marking for guests',
 	'YES_ANON_READ_MARKING_EXPLAIN'	=> 'Stores read/unread status information for guests. If disabled posts are always read for guests.',
 	'YES_BIRTHDAYS'					=> 'Enable birthday listing',
-	'YES_BIRTHDAYS_EXPLAIN'			=> 'If disabled the birthday listing is no longer displayed. To let this setting take effect the birthday feature needs to be enabled too.',
+	'YES_BIRTHDAYS_EXPLAIN'			=> 'If disabled the birthday listing is no longer displayed. To let this setting take effect the birthday feature need to be enabled too.',
 	'YES_JUMPBOX'					=> 'Enable display of jumpbox',
 	'YES_MODERATORS'				=> 'Enable display of moderators',
 	'YES_ONLINE'					=> 'Enable online user listings',
@@ -401,7 +327,7 @@ $lang = array_merge($lang, array(
 	'ACP_SERVER_SETTINGS_EXPLAIN'	=> 'Here you define server and domain dependant settings. Please ensure the data you enter is accurate, errors will result in e-mails containing incorrect information. When entering the domain name remember it does include http:// or other protocol term. Only alter the port number if you know your server uses a different value, port 80 is correct in most cases.',
 
 	'ENABLE_GZIP'				=> 'Enable GZip compression',
-	'ENABLE_GZIP_EXPLAIN'		=> 'Generated content will be compressed prior to sending it to the user. This can reduce network traffic but will also increase CPU usage on both server and client side. Requires zlib PHP extension to be loaded.',
+	'ENABLE_GZIP_EXPLAIN'		=> 'Generated content will be compressed prior to sending it to the user. This can reduce network traffic but will also increase CPU usage on both server and client side.',
 	'FORCE_SERVER_VARS'			=> 'Force server URL settings',
 	'FORCE_SERVER_VARS_EXPLAIN'	=> 'If set to yes the server settings defined here will be used in favour of the automatically determined values.',
 	'ICONS_PATH'				=> 'Post icons storage path',
@@ -436,7 +362,7 @@ $lang = array_merge($lang, array(
 	'BROWSER_VALID'					=> 'Validate browser',
 	'BROWSER_VALID_EXPLAIN'			=> 'Enables browser validation for each session improving security.',
 	'CHECK_DNSBL'					=> 'Check IP against DNS Blackhole List',
-	'CHECK_DNSBL_EXPLAIN'			=> 'If enabled the user’s IP address is checked against the following DNSBL services on registration and posting: <a href="http://spamcop.net">spamcop.net</a> and <a href="http://www.spamhaus.org">www.spamhaus.org</a>. This lookup may take a while, depending on the server’s configuration. If slowdowns are experienced or too many false positives reported it is recommended to disable this check.',
+	'CHECK_DNSBL_EXPLAIN'			=> 'If enabled the user’s IP address is checked against the following DNSBL services on registration and posting: <a href="http://spamcop.net">spamcop.net</a>, <a href="http://dsbl.org">dsbl.org</a> and <a href="http://www.spamhaus.org">www.spamhaus.org</a>. This lookup may take a while, depending on the server’s configuration. If slowdowns are experienced or too many false positives reported it is recommended to disable this check.',
 	'CLASS_B'						=> 'A.B',
 	'CLASS_C'						=> 'A.B.C',
 	'EMAIL_CHECK_MX'				=> 'Check e-mail domain for valid MX record',
@@ -454,17 +380,18 @@ $lang = array_merge($lang, array(
 	'MAX_LOGIN_ATTEMPTS'			=> 'Maximum number of login attempts',
 	'MAX_LOGIN_ATTEMPTS_EXPLAIN'	=> 'After this number of failed logins the user needs to additionally confirm his login visually (visual confirmation).',
 	'NO_IP_VALIDATION'				=> 'None',
-	'NO_REF_VALIDATION'				=> 'None',
+	'NO_REF_VALIDATION'             => 'None',
 	'PASSWORD_TYPE'					=> 'Password complexity',
 	'PASSWORD_TYPE_EXPLAIN'			=> 'Determines how complex a password needs to be when set or altered, subsequent options include the previous ones.',
 	'PASS_TYPE_ALPHA'				=> 'Must contain letters and numbers',
 	'PASS_TYPE_ANY'					=> 'No requirements',
 	'PASS_TYPE_CASE'				=> 'Must be mixed case',
 	'PASS_TYPE_SYMBOL'				=> 'Must contain symbols',
-	'REF_HOST'						=> 'Only validate host',
-	'REF_PATH'						=> 'Also validate path',
-	'REFERER_VALID'					=> 'Validate Referer',
-	'REFERER_VALID_EXPLAIN'			=> 'If enabled, the referer of POST requests will be checked against the host/script path settings. This may cause issues with boards using several domains and or external logins.',
+	'REF_HOST'                      => 'Only validate host',
+    'REF_PATH'                      => 'Also validate path',
+    'REFERER_VALID'                 => 'Validate Referer',
+    'REFERER_VALID_EXPLAIN'         => 'If enabled, the referer of POST requests will be checked against the host/script path settings. This may cause issues with boards using several domains and or external logins.',
+
 	'TPL_ALLOW_PHP'					=> 'Allow php in templates',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'If this option is enabled, <code>PHP</code> and <code>INCLUDEPHP</code> statements will be recognised and parsed in templates.',
 ));
@@ -484,11 +411,11 @@ $lang = array_merge($lang, array(
 	'EMAIL_FUNCTION_NAME'			=> 'E-mail function name',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'The e-mail function used to send mails through PHP.',
 	'EMAIL_PACKAGE_SIZE'			=> 'E-mail package size',
-	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'This is the number of maximum e-mails sent out in one package. This setting is applied to the internal message queue; set this value to 0 if you have problems with non-delivered notification e-mails.',
+	'EMAIL_PACKAGE_SIZE_EXPLAIN'	=> 'This is the number of maximum e-mails sent out in one package. This setting is applied to the internal message queue; set this value to 0 if you have problems with non-delivered notification emails.',
 	'EMAIL_SIG'						=> 'E-mail signature',
 	'EMAIL_SIG_EXPLAIN'				=> 'This text will be attached to all e-mails the board sends.',
 	'ENABLE_EMAIL'					=> 'Enable board-wide e-mails',
-	'ENABLE_EMAIL_EXPLAIN'			=> 'If this is set to disabled no e-mails will be sent by the board at all. <em>Note the user and admin account activation settings require this setting to be enabled. If currently using “user” or “admin” activation in the activation settings, disabling this setting will require no activation of new accounts.</em>',
+	'ENABLE_EMAIL_EXPLAIN'			=> 'If this is set to disabled no e-mails will be sent by the board at all.',
 	'SMTP_AUTH_METHOD'				=> 'Authentication method for SMTP',
 	'SMTP_AUTH_METHOD_EXPLAIN'		=> 'Only used if a username/password is set, ask your provider if you are unsure which method to use.',
 	'SMTP_CRAM_MD5'					=> 'CRAM-MD5',
@@ -525,8 +452,8 @@ $lang = array_merge($lang, array(
 	'JAB_SETTINGS_CHANGED'		=> 'Jabber settings changed successfully.',
 	'JAB_USE_SSL'				=> 'Use SSL to connect',
 	'JAB_USE_SSL_EXPLAIN'		=> 'If enabled a secure connection is tried to be established. The Jabber port will be modified to 5223 if port 5222 is specified.',
-	'JAB_USERNAME'				=> 'Jabber username or JID',
-	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username or a valid JID. The username will not be checked for validity. If you only specify a username, then your JID will be the username and the server you specified above. Else, specify a valid JID, for example user@jabber.org.',
+	'JAB_USERNAME'				=> 'Jabber username',
+	'JAB_USERNAME_EXPLAIN'		=> 'Specify a registered username. The username will not be checked for validity.',
 ));
 
 ?>

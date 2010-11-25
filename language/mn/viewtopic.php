@@ -1,10 +1,10 @@
 <?php
 /**
 *
-* viewtopic [English]
+* viewtopic [Mongolian]
 *
 * @package language
-* @version $Id: viewtopic.php 9972 2009-08-14 08:42:46Z Kellanved $
+* @version $Id: viewtopic.php,v 1.20 2007/10/29 13:39:34 B.Munkh-Erdene $
 * @copyright (c) 2005 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
@@ -36,80 +36,75 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'ATTACHMENT'						=> 'Attachment',
-	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'The attachments feature has been disabled.',
+	'ATTACHMENT'						=> 'Хавсралт',
+	'ATTACHMENT_FUNCTIONALITY_DISABLED'	=> 'Хавсралтыг идэвхигүй болгосон байна',
 
-	'BOOKMARK_ADDED'		=> 'Bookmarked topic successfully.',
-	'BOOKMARK_ERR'			=> 'Bookmarking the topic failed. Please try again.',
-	'BOOKMARK_REMOVED'		=> 'Removed bookmarked topic successfully.',
-	'BOOKMARK_TOPIC'		=> 'Bookmark topic',
-	'BOOKMARK_TOPIC_REMOVE'	=> 'Remove from bookmarks',
-	'BUMPED_BY'				=> 'Last bumped by %1$s on %2$s.',
-	'BUMP_TOPIC'			=> 'Bump topic',
+	'BOOKMARK_ADDED'		=> 'Сэдэв хадгалагдлаа.',
+	'BOOKMARK_REMOVED'		=> 'Хадгалсан сэдвийг буцаалаа.',
+	'BOOKMARK_TOPIC'		=> 'Сэдвийг тэмдэглэх',
+	'BOOKMARK_TOPIC_REMOVE'	=> 'Тэмдэглэлээсээ хасах',
+	'BUMPED_BY'				=> 'Хамгийн сүүлд цохисон %1$s on %2$s',
+	'BUMP_TOPIC'			=> 'Сэдвийг цохих',
 
-	'CODE'					=> 'Code',
-	'COLLAPSE_QR'			=> 'Hide Quick Reply',
+	'CODE'					=> 'Код',
 
-	'DELETE_TOPIC'			=> 'Delete topic',
-	'DOWNLOAD_NOTICE'		=> 'You do not have the required permissions to view the files attached to this post.',
+	'DELETE_TOPIC'			=> 'Сэдвийг устгах',
+	'DOWNLOAD_NOTICE'		=> 'Танд энэ бичлэгийн хавсралтыг үзэх зөвшөөрөл байхгүй байна.',
 
-	'EDITED_TIMES_TOTAL'	=> 'Last edited by %1$s on %2$s, edited %3$d times in total.',
-	'EDITED_TIME_TOTAL'		=> 'Last edited by %1$s on %2$s, edited %3$d time in total.',
-	'EMAIL_TOPIC'			=> 'E-mail friend',
-	'ERROR_NO_ATTACHMENT'	=> 'The selected attachment does not exist anymore.',
+	'EDITED_TIMES_TOTAL'	=> 'Хамгийн сүүлд %1$s гишүүн %2$s нд нийт %3$d дахь удаагаа зассан',
+	'EDITED_TIME_TOTAL'		=> 'Хамгийн сүүлд %1$s гишүүн %2$s нд нийт %3$d удаа зассан',
+	'EMAIL_TOPIC'			=> 'Найздаа илгээх',
+	'ERROR_NO_ATTACHMENT'	=> 'Сонгосон хавсралт файл алдаатай',
 
-	'FILE_NOT_FOUND_404'	=> 'The file <strong>%s</strong> does not exist.',
-	'FORK_TOPIC'			=> 'Copy topic',
-	'FULL_EDITOR'			=> 'Full Editor',
-	
+	'FILE_NOT_FOUND_404'	=> '<strong>%s</strong> ийм файл байхгүй.',
+	'FORK_TOPIC'			=> 'Сэдвийг хуулах',
+
 	'LINKAGE_FORBIDDEN'		=> 'You are not authorised to view, download or link from/to this site.',
-	'LOGIN_NOTIFY_TOPIC'	=> 'You have been notified about this topic, please login to view it.',
-	'LOGIN_VIEWTOPIC'		=> 'The board requires you to be registered and logged in to view this topic.',
+	'LOGIN_NOTIFY_TOPIC'	=> 'Та энэ сэдвийн тухай мэдэхийг хүсвэл нэвтрэн орж үзнэ үү.',
+	'LOGIN_VIEWTOPIC'		=> 'Энэ сэдвийг уншихын тулд нэвтэрсэн байх шаардлага форумын удирдагчийн зүгээс тавьсан байна.',
 
-	'MAKE_ANNOUNCE'				=> 'Change to “Announcement”',
-	'MAKE_GLOBAL'				=> 'Change to “Global”',
-	'MAKE_NORMAL'				=> 'Change to “Standard Topic”',
-	'MAKE_STICKY'				=> 'Change to “Sticky”',
+	'MAKE_ANNOUNCE'				=> '“Зарлал” болгох',
+	'MAKE_GLOBAL'				=> '“Даяар” болгох',
+	'MAKE_NORMAL'				=> '“Стандарт” болгох',
+	'MAKE_STICKY'				=> '“Наалттай” болгох',
 	'MAX_OPTIONS_SELECT'		=> 'You may select up to <strong>%d</strong> options',
 	'MAX_OPTION_SELECT'			=> 'You may select <strong>1</strong> option',
-	'MISSING_INLINE_ATTACHMENT'	=> 'The attachment <strong>%s</strong> is no longer available',
-	'MOVE_TOPIC'				=> 'Move topic',
+	'MISSING_INLINE_ATTACHMENT'	=> '<strong>%s</strong> энэ хавсралт longer available',
+	'MOVE_TOPIC'				=> 'Сэдвийг зөөх',
 
-	'NO_ATTACHMENT_SELECTED'=> 'You haven’t selected an attachment to download or view.',
-	'NO_NEWER_TOPICS'		=> 'There are no newer topics in this forum.',
-	'NO_OLDER_TOPICS'		=> 'There are no older topics in this forum.',
-	'NO_UNREAD_POSTS'		=> 'There are no new unread posts for this topic.',
-	'NO_VOTE_OPTION'		=> 'You must specify an option when voting.',
-	'NO_VOTES'				=> 'No votes',
+	'NO_ATTACHMENT_SELECTED'=> 'Та сонгосон хавсралтыг татаж эсвэл үзэж чадахгүй.',
+	'NO_NEWER_TOPICS'		=> 'Энэ форумд шинэхэн сэдэв алга байна',
+	'NO_OLDER_TOPICS'		=> 'Энэ форумд хуучирсан сэдэв алга байна',
+	'NO_UNREAD_POSTS'		=> 'Энэ сэдэвт уншаагүй бичлэг алга байна.',
+	'NO_VOTE_OPTION'		=> 'Та хэзээ санал өгөхийг тодорхой зааж өгөх хэрэгтэй.',
+	'NO_VOTES'				=> 'Санал алга',
 
-	'POLL_ENDED_AT'			=> 'Poll ended at %s',
-	'POLL_RUN_TILL'			=> 'Poll runs till %s',
-	'POLL_VOTED_OPTION'		=> 'You voted for this option',
-	'PRINT_TOPIC'			=> 'Print view',
+	'POLL_ENDED_AT'			=> '%s нд санал асуулга дууссан',
+	'POLL_RUN_TILL'			=> '%s санал асуулга эхэлсэн',
+	'POLL_VOTED_OPTION'		=> 'Та саналаа өгсөн байна',
+	'PRINT_TOPIC'			=> 'Хэвлэхээр харах',
 
-	'QUICK_MOD'				=> 'Quick-mod tools',
-	'QUICKREPLY'			=> 'Quick Reply',
-	'QUOTE'					=> 'Quote',
+	'QUICK_MOD'				=> 'Зохицуулах хэрэгсэл',
+	'QUOTE'					=> 'Ишлэх',
 
-	'REPLY_TO_TOPIC'		=> 'Reply to topic',
-	'RETURN_POST'			=> '%sReturn to the post%s',
+	'REPLY_TO_TOPIC'		=> 'Сэдэвт хариулах',
+	'RETURN_POST'			=> '%sСэдэв руу буцах%s',
 
-	'SHOW_QR'				=> 'Quick Reply',
-	'SUBMIT_VOTE'			=> 'Submit vote',
+	'SUBMIT_VOTE'			=> 'Саналаа өгөх',
 
-	'TOTAL_VOTES'			=> 'Total votes',
+	'TOTAL_VOTES'			=> 'Нийт санал',
 
-	'UNLOCK_TOPIC'			=> 'Unlock topic',
+	'UNLOCK_TOPIC'			=> 'Сэдвийг нээх',
 
-	'VIEW_INFO'				=> 'Post details',
-	'VIEW_NEXT_TOPIC'		=> 'Next topic',
-	'VIEW_PREVIOUS_TOPIC'	=> 'Previous topic',
-	'VIEW_RESULTS'			=> 'View results',
-	'VIEW_TOPIC_POST'		=> '1 post',
-	'VIEW_TOPIC_POSTS'		=> '%d posts',
-	'VIEW_UNREAD_POST'		=> 'First unread post',
+	'VIEW_INFO'				=> 'Санал асуулгын мэдээлэл',
+	'VIEW_NEXT_TOPIC'		=> 'Дараахь сэдэв',
+	'VIEW_PREVIOUS_TOPIC'	=> 'Өмнөх сэдэв',
+	'VIEW_RESULTS'			=> 'Үр дүнг үзэх',
+	'VIEW_TOPIC_POST'		=> '1 бичлэг',
+	'VIEW_TOPIC_POSTS'		=> '%d бичлэг',
+	'VIEW_UNREAD_POST'		=> 'Уншаагүй бичлэг',
 	'VISIT_WEBSITE'			=> 'WWW',
-	'VOTE_SUBMITTED'		=> 'Your vote has been cast.',
+	'VOTE_SUBMITTED'		=> 'Таны санал нэмэгдлээ',
 	'VOTE_CONVERTED'		=> 'Changing votes is not supported for converted polls.',
 
 ));

@@ -1,11 +1,11 @@
-Subject: You have been added to this usergroup
+Subject: Ta ene bulgemd nemegdlee
 
-Congratulations,
+Bayar hurgey!,
 
-You have been added to the "{GROUP_NAME}" group on "{SITENAME}".
-This action was done by a group leader or the site administrator, contact them for more information.
+"{SITENAME}" iin "{GROUP_NAME}" bulgemd nemegdlee.
+Uuniig bulgebiin zohitsuulagch yumuu forumiin udirdagch hiisen bogood delgerengui medehiig husvel tedentei holboo barina uu.
 
-You can view your groups information here:
+Ta bulgemiihee medeelliig endees uzej chadna:
 {U_GROUP}
 
 {EMAIL_SIG}

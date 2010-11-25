@@ -1,12 +1,12 @@
 <?php
-/**
+/** 
 *
-* search [English]
+* search [Mongolian]
 *
 * @package language
-* @version $Id: search.php 10004 2009-08-17 13:25:04Z rxu $
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @version $Id: search.php,v 1.19 2007/01/21 18:33:45 B.Munkh-Erdene $
+* @copyright (c) 2005 phpBB Group 
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License 
 *
 */
 
@@ -37,66 +37,63 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ALL_AVAILABLE'			=> 'All available',
-	'ALL_RESULTS'			=> 'All results',
+	'ALL_RESULTS'			=> 'Хайлтын үр дүн',
 
-	'DISPLAY_RESULTS'		=> 'Display results as',
+	'DISPLAY_RESULTS'		=> 'Дэлгэцэнд харуулахдаа',
 
-	'FOUND_SEARCH_MATCH'		=> 'Search found %d match',
-	'FOUND_SEARCH_MATCHES'		=> 'Search found %d matches',
+	'FOUND_SEARCH_MATCH'		=> 'Хайлтаар %d зүйл олдлоо',
+	'FOUND_SEARCH_MATCHES'		=> 'Хайлтаар %d зүйл олдлоо',
 	'FOUND_MORE_SEARCH_MATCHES'	=> 'Search found more than %d matches',
 
-	'GLOBAL'				=> 'Global announcement',
+	'GLOBAL'				=> 'Нийтийн зарлал',
 
 	'IGNORED_TERMS'			=> 'ignored',
 	'IGNORED_TERMS_EXPLAIN'	=> 'The following words in your search query were ignored because they are too common words: <strong>%s</strong>.',
 
-	'JUMP_TO_POST'			=> 'Jump to post',
-
+	'JUMP_TO_POST'			=> 'Бичлэгийг үзэх',
+	
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'The board requires you to be registered and logged in to view your own posts.',
-	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'The board requires you to be registered and logged in to view your unread posts.',
-
-	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'You specified too many words to search for. Please do not enter more than %1$d words.',
 
 	'NO_KEYWORDS'			=> 'You must specify at least one word to search for. Each word must consist of at least %d characters and must not contain more than %d characters excluding wildcards.',
-	'NO_RECENT_SEARCHES'	=> 'No searches have been carried out recently.',
+	'NO_RECENT_SEARCHES'	=> 'No searches have been carried out recently',
 	'NO_SEARCH'				=> 'Sorry but you are not permitted to use the search system.',
 	'NO_SEARCH_RESULTS'		=> 'No suitable matches were found.',
 	'NO_SEARCH_TIME'		=> 'Sorry but you cannot use search at this time. Please try again in a few minutes.',
 	'WORD_IN_NO_POST'		=> 'No posts were found because the word <strong>%s</strong> is not contained in any post.',
 	'WORDS_IN_NO_POST'		=> 'No posts were found because the words <strong>%s</strong> are not contained in any post.',
 
-	'POST_CHARACTERS'		=> 'characters of posts',
+	'POST_CHARACTERS'		=> 'тэмдэгтийг буцаа',
 
 	'RECENT_SEARCHES'		=> 'Recent searches',
 	'RESULT_DAYS'			=> 'Limit results to previous',
-	'RESULT_SORT'			=> 'Sort results by',
-	'RETURN_FIRST'			=> 'Return first',
+	'RESULT_SORT'			=> 'Үр дүнг эрэмбэлэх',
+	'RETURN_FIRST'			=> 'Бичлэгүүдийн эхний',
 	'RETURN_TO_SEARCH_ADV'	=> 'Return to advanced search',
 
 	'SEARCHED_FOR'				=> 'Search term used',
 	'SEARCHED_TOPIC'			=> 'Searched topic',
-	'SEARCH_ALL_TERMS'			=> 'Search for all terms or use query as entered',
-	'SEARCH_ANY_TERMS'			=> 'Search for any terms',
-	'SEARCH_AUTHOR'				=> 'Search for author',
-	'SEARCH_AUTHOR_EXPLAIN'		=> 'Use * as a wildcard for partial matches.',
+	'SEARCH_ALL_TERMS'			=> 'Оруулсан ямар нэгэн үг юмуу эсвэл оруулсан бүтцийг ашиглан хай',
+	'SEARCH_ANY_TERMS'			=> 'Бүх оруулсан үгсээр хай',
+	'SEARCH_AUTHOR'				=> 'Зохиогчоор хайх',
+	'SEARCH_AUTHOR_EXPLAIN'		=> 'Орлуулгыг тэмдэглэхдээ * тэмдэгийг ашиглана уу!',
 	'SEARCH_FIRST_POST'			=> 'First post of topics only',
-	'SEARCH_FORUMS'				=> 'Search in forums',
+	'SEARCH_FORUMS'				=> 'Хэлэлцүүлгээс хайх',
 	'SEARCH_FORUMS_EXPLAIN'		=> 'Select the forum or forums you wish to search in. Subforums are searched automatically if you do not disable “search subforums“ below.',
-	'SEARCH_IN_RESULTS'			=> 'Search these results',
+	'SEARCH_IN_RESULTS'			=> 'Эдгээр олдсон зүйлээс хайх',
 	'SEARCH_KEYWORDS_EXPLAIN'	=> 'Place <strong>+</strong> in front of a word which must be found and <strong>-</strong> in front of a word which must not be found. Put a list of words separated by <strong>|</strong> into brackets if only one of the words must be found. Use * as a wildcard for partial matches.',
-	'SEARCH_MSG_ONLY'			=> 'Message text only',
-	'SEARCH_OPTIONS'			=> 'Search options',
-	'SEARCH_QUERY'				=> 'Search query',
-	'SEARCH_SUBFORUMS'			=> 'Search subforums',
-	'SEARCH_TITLE_MSG'			=> 'Post subjects and message text',
-	'SEARCH_TITLE_ONLY'			=> 'Topic titles only',
-	'SEARCH_WITHIN'				=> 'Search within',
-	'SORT_ASCENDING'			=> 'Ascending',
-	'SORT_AUTHOR'				=> 'Author',
-	'SORT_DESCENDING'			=> 'Descending',
-	'SORT_FORUM'				=> 'Forum',
-	'SORT_POST_SUBJECT'			=> 'Post subject',
-	'SORT_TIME'					=> 'Post time',
+	'SEARCH_MSG_ONLY'			=> 'Зөвхөн бичлэгээс',
+	'SEARCH_OPTIONS'			=> 'Хайлтын тохиргоо',
+	'SEARCH_QUERY'				=> 'Хайлтын бүтэц',
+	'SEARCH_SUBFORUMS'			=> 'Дэд форумаас',
+	'SEARCH_TITLE_MSG'			=> 'Агуулга болон бичлэгээс',
+	'SEARCH_TITLE_ONLY'			=> 'Зөвхөн сэдвийн гарчигаар',
+	'SEARCH_WITHIN'				=> 'Хайхдаа',
+	'SORT_ASCENDING'			=> 'Өсөхөөр',
+	'SORT_AUTHOR'				=> 'Зохиогч',
+	'SORT_DESCENDING'			=> 'Буурахаар',
+	'SORT_FORUM'				=> 'Форум',
+	'SORT_POST_SUBJECT'			=> 'Гарчиг',
+	'SORT_TIME'					=> 'Огноо',
 
 	'TOO_FEW_AUTHOR_CHARS'	=> 'You must specify at least %d characters of the authors name.',
 ));

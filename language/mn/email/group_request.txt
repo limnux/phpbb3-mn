@@ -1,9 +1,9 @@
-Subject: A request to join your group has been made
+Subject: Tanai bulgeb negdeh huselt
 
-Dear {USERNAME},
+Hundet {USERNAME},
 
-The user "{REQUEST_USERNAME}" has requested to join the group "{GROUP_NAME}" you moderate on "{SITENAME}".
-To approve or deny this request for group membership please visit the following link:
+Negen hereglegch "{SITENAME}" dahi "{GROUP_NAME}" bulgemd negdeheer huselt ilgeelee.
+Tuuniig zovshooroh, esvel tatgalzahiin tuld daraahi holboosoor orno uu:
 
 {U_PENDING}
 

@@ -1,10 +1,10 @@
 <?php
 /**
 *
-* search_ignore_words [English]
+* search_ignore_words [Mongolian]
 *
 * @package language
-* @version $Id: search_ignore_words.php 8479 2008-03-29 00:22:48Z naderman $
+* @version $Id: search_ignore_words.php,v 1.3 2007/10/04 15:07:24 B.Munkh-Erdene $
 * @copyright (c) 2005 phpBB Group
 * @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *

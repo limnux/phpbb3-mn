@@ -1,11 +1,9 @@
 
-The following is an e-mail sent to you by an administrator of "{SITENAME}". If this message is spam, contains abusive or other comments you find offensive please contact the webmaster of the board at the following address:
+Enehuu email tand "{SITENAME}"-iin udirdagchaas ilgeegdsen baina. Herev ene ni ul hussen medeelel, esvel yamar negen yos bus medeelel aguulj baina gej ta uzvel daraah hayagaar forumiin udirdagchtai holboo barina uu:
 
 {CONTACT_EMAIL}
 
-Include this full e-mail (particularly the headers). 
-
-Message sent to you follows:
+Tand irsen medeelel:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 {MESSAGE}

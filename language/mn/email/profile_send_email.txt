@@ -1,13 +1,7 @@
-
-Hello {TO_USERNAME},
-
-The following is an e-mail sent to you by {FROM_USERNAME} via your account on "{SITENAME}". If this message is spam, contains abusive or other comments you find offensive please contact the webmaster of the board at the following address:
-
-{BOARD_CONTACT}
-
-Include this full e-mail (particularly the headers). Please note that the reply address to this e-mail has been set to that of {FROM_USERNAME}.
-
-Message sent to you follows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Хэнд: {TO_USERNAME}
+Хэнээс: {FROM_USERNAME}
 
 {MESSAGE}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Тайлбар: Энэхүү захиа нь "{SITENAME}" самбараар дамжуулан танд илгээгдсэн байна. Та энэ захианд шууд хариулж бичих боломжгүй бөгөөд хэрэв энэ захиа ямар нэгэн ёс бус мэдээлэл, хүсээгүй сурталчилгаа зэргийг агуулж байгаа бол {BOARD_CONTACT} хаягаар админд мэдэгдэнэ үү.
