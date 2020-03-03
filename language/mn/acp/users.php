@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_users [English]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: users.php 8479 2008-03-29 00:22:48Z naderman $
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -42,6 +43,7 @@ $lang = array_merge($lang, array(
 	'BAN_ALREADY_ENTERED'	=> 'The ban had been previously entered successfully. The ban list has not been updated.',
 	'BAN_SUCCESSFUL'		=> 'Ban entered successfully.',
 
+	'CANNOT_BAN_ANONYMOUS'			=> 'You are not allowed to ban the anonymous account. Permissions for anonymous users can be set under the Permissions tab.',
 	'CANNOT_BAN_FOUNDER'			=> 'You are not allowed to ban founder accounts.',
 	'CANNOT_BAN_YOURSELF'			=> 'You are not allowed to ban yourself.',
 	'CANNOT_DEACTIVATE_BOT'			=> 'You are not allowed to deactivate bot accounts. Please deactivate the bot within the bots page instead.',
@@ -51,14 +53,15 @@ $lang = array_merge($lang, array(
 	'CANNOT_FORCE_REACT_FOUNDER'	=> 'You are not allowed to force reactivation on founder accounts.',
 	'CANNOT_FORCE_REACT_YOURSELF'	=> 'You are not allowed to force reactivation of your own account.',
 	'CANNOT_REMOVE_ANONYMOUS'		=> 'You are not able to remove the guest user account.',
+	'CANNOT_REMOVE_FOUNDER'			=> 'You are not allowed to remove founder accounts.',
 	'CANNOT_REMOVE_YOURSELF'		=> 'You are not allowed to remove your own user account.',
 	'CANNOT_SET_FOUNDER_IGNORED'	=> 'You are not able to promote ignored users to be founders.',
 	'CANNOT_SET_FOUNDER_INACTIVE'	=> 'You need to activate users before you promote them to founders, only activated users are able to be promoted.',
-	'CONFIRM_EMAIL_EXPLAIN'			=> 'You only need to specify this if you are changing the users e-mail address.',
+	'CONFIRM_EMAIL_EXPLAIN'			=> 'You only need to specify this if you are changing the users email address.',
 
 	'DELETE_POSTS'			=> 'Delete posts',
 	'DELETE_USER'			=> 'Delete user',
-	'DELETE_USER_EXPLAIN'	=> 'Please note that deleting a user is final, they cannot be recovered.',
+	'DELETE_USER_EXPLAIN'	=> 'Please note that deleting a user is final, they cannot be recovered. Unread private messages sent by this user will be deleted and will not be available to their recipients.',
 
 	'FORCE_REACTIVATION_SUCCESS'	=> 'Successfully forced reactivation.',
 	'FOUNDER'						=> 'Founder',
@@ -77,6 +80,7 @@ $lang = array_merge($lang, array(
 	'MOVE_POSTS_EXPLAIN'	=> 'Please select the forum to which you wish to move all the posts this user has made.',
 
 	'NO_SPECIAL_RANK'		=> 'No special rank assigned',
+	'NO_WARNINGS'			=> 'No warnings.',
 	'NOT_MANAGE_FOUNDER'	=> 'You tried to manage a user with founder status. Only founders are allowed to manage other founders.',
 
 	'QUICK_TOOLS'			=> 'Quick tools',
@@ -92,8 +96,8 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_ACTIVATE'			=> 'Activate account',
 	'USER_ADMIN_ACTIVATED'			=> 'User activated successfully.',
 	'USER_ADMIN_AVATAR_REMOVED'		=> 'Successfully removed avatar from user account.',
-	'USER_ADMIN_BAN_EMAIL'			=> 'Ban by e-mail',
-	'USER_ADMIN_BAN_EMAIL_REASON'	=> 'E-mail address banned via user management',
+	'USER_ADMIN_BAN_EMAIL'			=> 'Ban by email',
+	'USER_ADMIN_BAN_EMAIL_REASON'	=> 'Email address banned via user management',
 	'USER_ADMIN_BAN_IP'				=> 'Ban by IP',
 	'USER_ADMIN_BAN_IP_REASON'		=> 'IP banned via user management',
 	'USER_ADMIN_BAN_NAME_REASON'	=> 'Username banned via user management',
@@ -102,21 +106,29 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN_DEACTIVED'			=> 'User deactivated successfully.',
 	'USER_ADMIN_DEL_ATTACH'			=> 'Delete all attachments',
 	'USER_ADMIN_DEL_AVATAR'			=> 'Delete avatar',
+	'USER_ADMIN_DEL_OUTBOX'			=> 'Empty PM outbox',
 	'USER_ADMIN_DEL_POSTS'			=> 'Delete all posts',
 	'USER_ADMIN_DEL_SIG'			=> 'Delete signature',
 	'USER_ADMIN_EXPLAIN'			=> 'Here you can change your users information and certain specific options.',
 	'USER_ADMIN_FORCE'				=> 'Force reactivation',
+	'USER_ADMIN_LEAVE_NR'			=> 'Remove from Newly Registered',
 	'USER_ADMIN_MOVE_POSTS'			=> 'Move all posts',
 	'USER_ADMIN_SIG_REMOVED'		=> 'Successfully removed signature from user account.',
 	'USER_ATTACHMENTS_REMOVED'		=> 'Successfully removed all attachments made by this user.',
+	'USER_AVATAR_NOT_ALLOWED'		=> 'The avatar cannot be displayed because avatars have been disallowed.',
 	'USER_AVATAR_UPDATED'			=> 'Successfully updated user avatars details.',
+	'USER_AVATAR_TYPE_NOT_ALLOWED'	=> 'The current avatar cannot be displayed because its type has been disallowed.',
 	'USER_CUSTOM_PROFILE_FIELDS'	=> 'Custom profile fields',
 	'USER_DELETED'					=> 'User deleted successfully.',
 	'USER_GROUP_ADD'				=> 'Add user to group',
 	'USER_GROUP_NORMAL'				=> 'User defined groups user is a member of',
 	'USER_GROUP_PENDING'			=> 'Groups user is in pending mode',
 	'USER_GROUP_SPECIAL'			=> 'Pre-defined groups user is a member of',
+	'USER_LIFTED_NR'				=> 'Successfully removed the user’s newly registered status.',
 	'USER_NO_ATTACHMENTS'			=> 'There are no attached files to display.',
+	'USER_NO_POSTS_TO_DELETE'			=> 'The user has no posts to retain or delete.',
+	'USER_OUTBOX_EMPTIED'			=> 'Successfully emptied user’s private message outbox.',
+	'USER_OUTBOX_EMPTY'				=> 'The user’s private message outbox was already empty.',
 	'USER_OVERVIEW_UPDATED'			=> 'User details updated.',
 	'USER_POSTS_DELETED'			=> 'Successfully removed all posts made by this user.',
 	'USER_POSTS_MOVED'				=> 'Successfully moved users posts to target forum.',
@@ -126,7 +138,6 @@ $lang = array_merge($lang, array(
 	'USER_RANK'						=> 'User rank',
 	'USER_RANK_UPDATED'				=> 'User rank updated.',
 	'USER_SIG_UPDATED'				=> 'User signature successfully updated.',
+	'USER_WARNING_LOG_DELETED'		=> 'No information available. Possibly the log entry has been deleted.',
 	'USER_TOOLS'					=> 'Basic tools',
 ));
-
-?>

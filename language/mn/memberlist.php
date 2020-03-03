@@ -43,15 +43,18 @@ $lang = array_merge($lang, array(
 	'ADD_FRIEND'			=> 'Найзаар сонгох',
 	'AFTER'					=> 'Дараа',	
 
-	'ALL'					=> 'All',
+	'ALL'					=> 'Бүгд',
 	
 	'BEFORE'				=> 'Өмнө',
 
-	'CC_EMAIL'				=> 'Энэ Эмэйлын хуулбарыг өөртөө илгээх',
-	'CONTACT_USER'			=> 'Холбоо барих',
+	'CC_SENDER'				=> 'Send a copy of this email to yourself.',
+	'CONTACT_ADMIN'			=> 'Contact a Board Administrator',
+
 
 	'DEST_LANG'				=> 'Хэл',
 	'DEST_LANG_EXPLAIN'		=> 'Select an appropriate language (if available) for the recipient of this message.',
+
+	'EDIT_PROFILE'			=> 'Edit profile',
 
 	'EMAIL_BODY_EXPLAIN'	=> 'This message will be sent as plain text, do not include any HTML or BBCode. The return address for this message will be set to your email address.',
 	'EMAIL_DISABLED'		=> 'Sorry but all email related functions have been disabled.',
@@ -77,30 +80,33 @@ $lang = array_merge($lang, array(
 	'IM_DOWNLOAD_APP'		=> 'Download application',
 	'IM_ICQ'				=> 'Please note that users may have selected to not receive unsolicited instant messages.',
 	'IM_JABBER'				=> 'Please note that users may have selected to not receive unsolicited instant messages.',
-	'IM_JABBER_SUBJECT'		=> 'This is an automated message please do not reply! Message from user %1$s at %2$s',
-	'IM_MESSAGE'			=> 'Таны зурвас',
-	'IM_MSNM'				=> 'Please note that you need Windows Messenger installed to use this.',
-	'IM_MSNM_BROWSER'		=> 'Your browser does not support this.',
-	'IM_MSNM_CONNECT'		=> 'MSNM is not connected.\nYou have to connect to MSNM to continue.',		
-	'IM_NAME'				=> 'Таны нэр',
+	'IM_JABBER_SUBJECT'		=> 'This is an automated message please do not reply! Message from user %1$s at %2$s.',
+	'IM_MESSAGE'			=> 'Your message',
+	'IM_NAME'				=> 'Your Name',
 	'IM_NO_DATA'			=> 'There is no suitable contact information for this user.',
-    'IM_NO_JABBER'         => 'Sorry, direct messaging of Jabber users is not supported on this board. You will need a Jabber client installed on your system to contact the recipient above.',
-	'IM_RECIPIENT'			=> 'Хүлээн авагч',
-	'IM_SEND'				=> 'Зурвас бичих',
-	'IM_SEND_MESSAGE'		=> 'Зурвас бичих',
-	'IM_SENT_JABBER'		=> 'Таны зурвас %1$s гишүүнд амжилттай илгээгдлээ.',
-	'IM_USER'				=> 'Яаралтай зурвас илгээх',
-	
-	'LAST_ACTIVE'				=> 'Сүүлд зочилсон',
+	'IM_NO_JABBER'			=> 'Sorry, direct messaging of Jabber users is not supported on this board. You will need a Jabber client installed on your system to contact the recipient above.',
+	'IM_RECIPIENT'			=> 'Recipient',
+	'IM_SEND'				=> 'Send message',
+	'IM_SEND_MESSAGE'		=> 'Send message',
+	'IM_SENT_JABBER'		=> 'Your message to %1$s has been sent successfully.',
+	'IM_USER'				=> 'Send an instant message',
+
+	'LAST_ACTIVE'				=> 'Last active',
 	'LESS_THAN'					=> 'Less than',
-	'LIST_USER'					=> '1 гишүүн',
-	'LIST_USERS'				=> '%d гишүүд',
-	'LOGIN_EXPLAIN_LEADERS'		=> 'Та нэвтрэн орж бүлгэмийн жагсаалтыг үзнэ үү.',
+	'LIST_USERS'				=> array(
+		1	=> '%d гишүүн',
+		2	=> '%d гишүүд',
+	),
+	'LOGIN_EXPLAIN_TEAM'		=> 'Та нэвтрэн орж бүлгэмийн жагсаалтыг үзнэ үү.',
 	'LOGIN_EXPLAIN_MEMBERLIST'	=> 'Та нэвтрэн орж гишүүдийн жагсаалтыг үзнэ үү.',
 	'LOGIN_EXPLAIN_SEARCHUSER'	=> 'Та нэвтрэн орж хэрэглэгч хайна уу.',
 	'LOGIN_EXPLAIN_VIEWPROFILE'	=> 'Та нэвтрэн орж хувийн мэдээлэл үзнэ үү.',
 
+	'MANAGE_GROUP'			=> 'Manage Group',
 	'MORE_THAN'				=> 'Илүү: ',
+
+	'NO_CONTACT_FORM'		=> 'The board administrator contact form has been disabled.',
+	'NO_CONTACT_PAGE'		=> 'The board administrator contact page has been disabled.',
 
 	'NO_EMAIL'				=> 'Та гишүүдэд майл илгээх эрхгүй байна.',
 	'NO_VIEW_USERS'			=> 'Та гишүүдийн жагсаалт болон танилцуулгыг харах эрхгүй байна.',
@@ -119,12 +125,12 @@ $lang = array_merge($lang, array(
 	'SEARCH_USER_POSTS'		=> 'Хэрэглэгчийн бичлэгийг хайх',
 	'SELECT_MARKED'			=> 'Тэмдэглэсэнийг сонгох',
 	'SELECT_SORT_METHOD'	=> 'Эрэмбэлэх төрөл',
-	'SEND_AIM_MESSAGE'		=> 'AIM мессенжер',
+	'SENDER_EMAIL_ADDRESS'	=> 'Your email address',
+	'SENDER_NAME'			=> 'Your name',
 	'SEND_ICQ_MESSAGE'		=> 'ICQ мессенжер',
 	'SEND_IM'				=> 'Мессенжерээр холбогдох',
 	'SEND_JABBER_MESSAGE'	=> 'Jabber мессенжер',
 	'SEND_MESSAGE'			=> 'Зурвас илгээх',
-	'SEND_MSNM_MESSAGE'		=> 'MSNM/WLM мессенжер',
 	'SEND_YIM_MESSAGE'		=> 'YM мессенжер',
 	'SORT_EMAIL'			=> 'E-mail',
 	'SORT_LAST_ACTIVE'		=> 'Сүүлд зочилсон',
@@ -134,13 +140,19 @@ $lang = array_merge($lang, array(
 	'USER_ADMIN'			=> 'Administrate user',
 	'USER_BAN'              => 'Banning',
 	'USER_FORUM'			=> 'Хэрэглэгчийн үзүүлэлт',
+'USER_LAST_REMINDED'	=> array(
+		0		=> 'No reminder sent at this time',
+		1		=> '%1$d reminder sent<br />» %2$s',
+		2		=> '%1$d reminder sent<br />» %2$s',
+	),
 	'USER_ONLINE'			=> 'Холбогдсон',
 	'USER_PRESENCE'			=> 'Forum presence',
+	'USERS_PER_PAGE'		=> 'Users per page',
 
-	'VIEWING_PROFILE'		=> '%s -н мэдээлэл',
-	'VISITED'				=> 'Сүүлд зочилсон',
-
-	'WWW'					=> 'Веб сайт',
+	'VIEWING_PROFILE'		=> 'Viewing profile - %s',
+	'VIEW_FACEBOOK_PROFILE'	=> 'View Facebook Profile',
+	'VIEW_SKYPE_PROFILE'	=> 'View Skype Profile',
+	'VIEW_TWITTER_PROFILE'	=> 'View Twitter Profile',
+	'VIEW_YOUTUBE_CHANNEL'	=> 'View YouTube Channel',
+	'VIEW_GOOGLEPLUS_PROFILE' => 'View Google+ Profile',
 ));
-
-?>
