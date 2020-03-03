@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* captcha_qa [English]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: captcha_qa.php 9966 2009-08-12 15:12:03Z Kellanved $
-* @copyright (c) 2009 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -36,28 +37,28 @@ if (empty($lang) || !is_array($lang))
 // in a url you again do not need to specify an order e.g., 'Click %sHERE%s' is fine
 
 $lang = array_merge($lang, array(
-	'CAPTCHA_QA'				=> 'Q&amp;A CAPTCHA',
-	'CONFIRM_QUESTION_EXPLAIN'	=> 'This question is a means of identifying and preventing automated submissions.',
-	'CONFIRM_QUESTION_WRONG'	=> 'You have provided an invalid answer to the confirmation question.',
+	'CAPTCHA_QA'				=> 'Асуулт, хариулт',
+	'CONFIRM_QUESTION_EXPLAIN'	=> 'Та доорх талбарт дээрх асуултанд хариулна уу.',
+	'CONFIRM_QUESTION_WRONG'	=> 'Таны хариулт буруу байна.',
+	'CONFIRM_QUESTION_MISSING'	=> 'Questions for the captcha could not be retrieved. Please contact a board administrator.',
 
-	'QUESTION_ANSWERS'			=> 'Answers',
-	'ANSWERS_EXPLAIN'			=> 'Please enter valid answers to the question, one per line.',
-	'CONFIRM_QUESTION'			=> 'Question',
+	'QUESTION_ANSWERS'			=> 'Хариултууд',
+	'ANSWERS_EXPLAIN'			=> 'Зөв хариулт бүрийг мөр мөрөөр бичнэ үү.',
+	'CONFIRM_QUESTION'			=> 'Асуулт:',
 
-	'ANSWER'					=> 'Answer',
-	'EDIT_QUESTION'				=> 'Edit Question',
-	'QUESTIONS'					=> 'Questions',
+	'ANSWER'					=> 'Хариулт',
+	'EDIT_QUESTION'				=> 'Асуулт засах',
+	'QUESTIONS'					=> 'Асуултууд',
 	'QUESTIONS_EXPLAIN'			=> 'During registration, users will be asked one of the questions specified here. To use this plugin, at least one question must be set in the default language. These questions should be easy for your target audience to answer, but beyond the ability of a bot capable of running a Google™ search. Using a large and regulary changed set of questions will yield the best results. Enable the strict setting if your question relies on punctuation or capitalisation.',
-	'QUESTION_DELETED'			=> 'Question deleted',
-	'QUESTION_LANG'				=> 'Language',
-	'QUESTION_LANG_EXPLAIN'		=> 'The language that this question and its answers are written in.',
+	'QUESTION_DELETED'			=> 'Асуулт устгагдлаа',
+	'QUESTION_LANG'				=> 'Хэлт',
+	'QUESTION_LANG_EXPLAIN'		=> 'Энэ асуулт хариулт нь дараах хэлээр бичигдсэн байна.',
 	'QUESTION_STRICT'			=> 'Strict check',
 	'QUESTION_STRICT_EXPLAIN'	=> 'If enabled, capitalisation and whitespace will also be enforced.',
 
-	'QUESTION_TEXT'				=> 'Question',
+	'QUESTION_TEXT'				=> 'Асуулт:',
 	'QUESTION_TEXT_EXPLAIN'		=> 'The question that will be asked on registration.',
 
-	'QA_ERROR_MSG'				=> 'Please fill in all fields and enter at least one answer.',
+	'QA_ERROR_MSG'				=> 'Та асуултанд хариулж дор хаяж нэг хариулт оруулна уу.',
+	'QA_LAST_QUESTION'			=> 'You cannot delete all questions while the plugin is active.',
 ));
-
-?>

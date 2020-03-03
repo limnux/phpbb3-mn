@@ -1,12 +1,13 @@
 <?php
 /**
 *
-* acp_forums [English]
+* This file is part of the phpBB Forum Software package.
 *
-* @package language
-* @version $Id: forums.php 8479 2008-03-29 00:22:48Z naderman $
-* @copyright (c) 2005 phpBB Group
-* @license http://opensource.org/licenses/gpl-license.php GNU Public License
+* @copyright (c) phpBB Limited <https://www.phpbb.com>
+* @license GNU General Public License, version 2 (GPL-2.0)
+*
+* For full copyright and license information, please see
+* the docs/CREDITS.txt file.
 *
 */
 
@@ -43,10 +44,17 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Time in days between pruning events.',
 	'AUTO_PRUNE_VIEWED'			=> 'Auto-prune post viewed age',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Number of days since topic was viewed after which topic is removed.',
+	'AUTO_PRUNE_SHADOW_FREQ'	=> 'Auto-prune shadow topics frequency',
+	'AUTO_PRUNE_SHADOW_DAYS'	=> 'Auto-prune shadow topics age',
+	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Number of days after which shadow topic is removed.',
+	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Time in days between pruning events.',
 
+	'CONTINUE'						=> 'Continue',
 	'COPY_PERMISSIONS'				=> 'Copy permissions from',
+	'COPY_PERMISSIONS_EXPLAIN'		=> 'To ease up the permission setup for your new forum, you can copy the permissions of an existing forum.',
 	'COPY_PERMISSIONS_ADD_EXPLAIN'	=> 'Once created, the forum will have the same permissions as the one you select here. If no forum is selected the newly created forum will not be visible until permissions had been set.',
 	'COPY_PERMISSIONS_EDIT_EXPLAIN'	=> 'If you select to copy permissions, the forum will have the same permissions as the one you select here. This will overwrite any permissions you have previously set for this forum with the permissions of the forum you select here. If no forum is selected the current permissions will be kept.',
+	'COPY_TO_ACL'					=> 'Alternatively, you are also able to %sset up new permissions%s for this forum.',
 	'CREATE_FORUM'					=> 'Create new forum',
 
 	'DECIDE_MOVE_DELETE_CONTENT'		=> 'Delete content or move to forum',
@@ -62,12 +70,14 @@ $lang = array_merge($lang, array(
 	'ENABLE_INDEXING_EXPLAIN'		=> 'If set to yes posts made to this forum will be indexed for searching.',
 	'ENABLE_POST_REVIEW'			=> 'Enable post review',
 	'ENABLE_POST_REVIEW_EXPLAIN'	=> 'If set to yes users are able to review their post if new posts were made to the topic while users wrote theirs. This should be disabled for chat forums.',
+	'ENABLE_QUICK_REPLY'			=> 'Enable quick reply',
+	'ENABLE_QUICK_REPLY_EXPLAIN'	=> 'Enables the quick reply in this forum. This setting is not considered if the quick reply is disabled board wide. The quick reply will only be displayed for users who have permission to post in this forum.',
 	'ENABLE_RECENT'					=> 'Display active topics',
 	'ENABLE_RECENT_EXPLAIN'			=> 'If set to yes topics made to this forum will be shown in the active topics list.',
 	'ENABLE_TOPIC_ICONS'			=> 'Enable topic icons',
 
 	'FORUM_ADMIN'						=> 'Forum administration',
-	'FORUM_ADMIN_EXPLAIN'				=> 'In phpBB3 there are no categories, everything is forum based. Each forum can have an unlimited number of sub-forums and you can determine whether each may be posted to or not (i.e. whether it acts like an old category). Here you can add, edit, delete, lock, unlock individual forums as well as set certain additional controls. If your posts and topics have got out of sync you can also resynchronise a forum. <strong>You need to copy or set appropriate permissions for newly created forums to have them displayed.</strong>',
+	'FORUM_ADMIN_EXPLAIN'				=> 'In phpBB3 everything is forum based. A category is just a special type of forum. Each forum can have an unlimited number of sub-forums and you can determine whether each may be posted to or not (i.e. whether it acts like an old category). Here you can add, edit, delete, lock, unlock individual forums as well as set certain additional controls. If your posts and topics have got out of sync you can also resynchronise a forum. <strong>You need to copy or set appropriate permissions for newly created forums to have them displayed.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Enable auto-pruning',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Prunes the forum of topics, set the frequency/age parameters below.',
 	'FORUM_CREATED'						=> 'Forum created successfully.',
@@ -77,15 +87,17 @@ $lang = array_merge($lang, array(
 	'FORUM_DELETE_EXPLAIN'				=> 'The form below will allow you to delete a forum. If the forum is postable you are able to decide where you want to put all topics (or forums) it contained.',
 	'FORUM_DELETED'						=> 'Forum successfully deleted.',
 	'FORUM_DESC'						=> 'Description',
-	'FORUM_DESC_EXPLAIN'				=> 'Any HTML markup entered here will be displayed as is.',
+	'FORUM_DESC_EXPLAIN'				=> 'Any HTML markup entered here will be displayed as is. If the selected forum type is a category the description is not used.',
 	'FORUM_EDIT_EXPLAIN'				=> 'The form below will allow you to customise this forum. Please note that moderation and post count controls are set via forum permissions for each user or usergroup.',
 	'FORUM_IMAGE'						=> 'Forum image',
 	'FORUM_IMAGE_EXPLAIN'				=> 'Location, relative to the phpBB root directory, of an additional image to associate with this forum.',
+	'FORUM_IMAGE_NO_EXIST'				=> 'The specified forum image does not exist',
 	'FORUM_LINK_EXPLAIN'				=> 'Full URL (including the protocol, i.e.: <samp>http://</samp>) to the destination location that clicking this forum will take the user, e.g.: <samp>http://www.phpbb.com/</samp>.',
 	'FORUM_LINK_TRACK'					=> 'Track link redirects',
 	'FORUM_LINK_TRACK_EXPLAIN'			=> 'Records the number of times a forum link was clicked.',
 	'FORUM_NAME'						=> 'Forum name',
 	'FORUM_NAME_EMPTY'					=> 'You must enter a name for this forum.',
+	'FORUM_NAME_EMOJI'					=> 'The forum name you entered is invalid.<br>It contains the following unsupported characters:<br>%s',
 	'FORUM_PARENT'						=> 'Parent forum',
 	'FORUM_PASSWORD'					=> 'Forum password',
 	'FORUM_PASSWORD_CONFIRM'			=> 'Confirm forum password',
@@ -93,9 +105,11 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_EXPLAIN'			=> 'Defines a password for this forum, use the permission system in preference.',
 	'FORUM_PASSWORD_UNSET'				=> 'Remove forum password',
 	'FORUM_PASSWORD_UNSET_EXPLAIN'		=> 'Check here if you want to remove the forum password.',
-	'FORUM_PASSWORD_OLD'				=> 'The forum password is using an old encryption and should be changed.',
+	'FORUM_PASSWORD_OLD'				=> 'The forum password is using an old hashing method and should be changed.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'The passwords you entered did not match.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Forum prune settings',
+	'FORUM_PRUNE_SHADOW'				=> 'Enable auto-pruning of shadow topics',
+	'FORUM_PRUNE_SHADOW_EXPLAIN'			=> 'Prunes the forum of shadow topics, set the frequency/age parameters below.',
 	'FORUM_RESYNCED'					=> 'Forum “%s” successfully resynced',
 	'FORUM_RULES_EXPLAIN'				=> 'Forum rules are displayed at any page within the given forum.',
 	'FORUM_RULES_LINK'					=> 'Link to forum rules',
@@ -150,5 +164,3 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'			=> 'Unlocked',
 ));
-
-?>

@@ -41,9 +41,14 @@ $lang = array_merge($lang, array(
 
 	'DISPLAY_RESULTS'		=> 'Дэлгэцэнд харуулахдаа',
 
-	'FOUND_SEARCH_MATCH'		=> 'Хайлтаар %d зүйл олдлоо',
-	'FOUND_SEARCH_MATCHES'		=> 'Хайлтаар %d зүйл олдлоо',
-	'FOUND_MORE_SEARCH_MATCHES'	=> 'Search found more than %d matches',
+	'FOUND_SEARCH_MATCHES'		=> array(
+		1	=> 'Хайлтаар %d зүйл олдлоо',
+		2	=> 'Хайлтаар %d зүйл олдлоо',
+	),
+	'FOUND_MORE_SEARCH_MATCHES'		=> array(
+		1	=> 'Search found more than %d match',
+		2	=> 'Search found more than %d matches',
+	),
 
 	'GLOBAL'				=> 'Нийтийн зарлал',
 
@@ -53,25 +58,39 @@ $lang = array_merge($lang, array(
 	'JUMP_TO_POST'			=> 'Бичлэгийг үзэх',
 	
 	'LOGIN_EXPLAIN_EGOSEARCH'	=> 'The board requires you to be registered and logged in to view your own posts.',
+	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'The board requires you to be registered and logged in to view your unread posts.',
+	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'The board requires you to be registered and logged in to view new posts since your last visit.',
 
-	'NO_KEYWORDS'			=> 'You must specify at least one word to search for. Each word must consist of at least %d characters and must not contain more than %d characters excluding wildcards.',
-	'NO_RECENT_SEARCHES'	=> 'No searches have been carried out recently',
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
+		1	=> 'You specified too many words to search for. Please do not enter more than %1$d word.',
+		2	=> 'You specified too many words to search for. Please do not enter more than %1$d words.',
+	),
+
+	'NO_KEYWORDS'			=> 'You must specify at least one word to search for. Each word must consist of at least %s and must not contain more than %s excluding wildcards.',
+	'NO_RECENT_SEARCHES'	=> 'No searches have been carried out recently.',
 	'NO_SEARCH'				=> 'Sorry but you are not permitted to use the search system.',
 	'NO_SEARCH_RESULTS'		=> 'No suitable matches were found.',
-	'NO_SEARCH_TIME'		=> 'Sorry but you cannot use search at this time. Please try again in a few minutes.',
+	'NO_SEARCH_LOAD'		=> 'Sorry but you cannot use search at this time. The server has high load. Please try again later.',
+	'NO_SEARCH_TIME'		=> array(
+		1	=> 'Sorry but you cannot use search at this time. Please try again in %d second.',
+		2	=> 'Sorry but you cannot use search at this time. Please try again in %d seconds.',
+	),
+	'NO_SEARCH_UNREADS'		=> 'Sorry but searching for unread posts has been disabled on this board.',
 	'WORD_IN_NO_POST'		=> 'No posts were found because the word <strong>%s</strong> is not contained in any post.',
 	'WORDS_IN_NO_POST'		=> 'No posts were found because the words <strong>%s</strong> are not contained in any post.',
 
-	'POST_CHARACTERS'		=> 'тэмдэгтийг буцаа',
+	'POST_CHARACTERS'		=> 'characters of posts',
+	'PHRASE_SEARCH_DISABLED'	=> 'Searching by exact phrase is not supported on this board.',
 
 	'RECENT_SEARCHES'		=> 'Recent searches',
 	'RESULT_DAYS'			=> 'Limit results to previous',
-	'RESULT_SORT'			=> 'Үр дүнг эрэмбэлэх',
-	'RETURN_FIRST'			=> 'Бичлэгүүдийн эхний',
-	'RETURN_TO_SEARCH_ADV'	=> 'Return to advanced search',
+	'RESULT_SORT'			=> 'Sort results by',
+	'RETURN_FIRST'			=> 'Return first',
+	'GO_TO_SEARCH_ADV'	=> 'Go to advanced search',
 
 	'SEARCHED_FOR'				=> 'Search term used',
 	'SEARCHED_TOPIC'			=> 'Searched topic',
+	'SEARCHED_QUERY'			=> 'Searched query',
 	'SEARCH_ALL_TERMS'			=> 'Оруулсан ямар нэгэн үг юмуу эсвэл оруулсан бүтцийг ашиглан хай',
 	'SEARCH_ANY_TERMS'			=> 'Бүх оруулсан үгсээр хай',
 	'SEARCH_AUTHOR'				=> 'Зохиогчоор хайх',
@@ -94,8 +113,11 @@ $lang = array_merge($lang, array(
 	'SORT_FORUM'				=> 'Форум',
 	'SORT_POST_SUBJECT'			=> 'Гарчиг',
 	'SORT_TIME'					=> 'Огноо',
+	'SPHINX_SEARCH_FAILED'		=> 'Search failed: %s',
+	'SPHINX_SEARCH_FAILED_LOG'	=> 'Sorry, search could not be performed. More information about this failure has been logged in the error log.',
 
-	'TOO_FEW_AUTHOR_CHARS'	=> 'You must specify at least %d characters of the authors name.',
+	'TOO_FEW_AUTHOR_CHARS'	=> array(
+		1	=> 'You must specify at least %d character of the authors name.',
+		2	=> 'You must specify at least %d characters of the authors name.',
+	),
 ));
-
-?>

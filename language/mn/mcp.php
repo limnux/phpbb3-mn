@@ -1,5 +1,5 @@
 <?php
-/** 
+/**
 *
 * mcp [Mongolian]
 *
@@ -46,34 +46,41 @@ $lang = array_merge($lang, array(
 	'ALL_NOTES_DELETED'		=> 'Бүх хэрэглэгчийн тэмдэглэлүүд устгагдлаа',
 	'ALL_REPORTS'			=> 'Бүх мэдээллүүд',
 	'ALREADY_REPORTED'		=> 'Энэ бичлэг аль хэдийнэ мэдээлэшдсэн байна',
+	'ALREADY_REPORTED_PM'	=> 'This private message has already been reported.',
 	'ALREADY_WARNED'		=> 'A warning has already been issued for this post',
 	'APPROVE'				=> 'Сайшаах',
 	'APPROVE_POST'			=> 'Бичлэг сайшаах',
 	'APPROVE_POST_CONFIRM'	=> 'Та энэ бичлэгийг сайшааж үзэх үү?',
-	'APPROVE_POSTS'			=> 'Бичлэгүүд сайшаах',
-	'APPROVE_POSTS_CONFIRM'	=> 'Та энэ бичлэгүүдийг сайшааж үзэх үү?',
+	'APPROVE_TOPIC'			=> 'Approve topic',
+	'APPROVE_TOPIC_CONFIRM'	=> 'Are you sure you want to approve this topic?',
+	'APPROVE_TOPICS'		=> 'Approve topics',
+	'APPROVE_TOPICS_CONFIRM'=> 'Are you sure you want to approve the selected topics?',
 
 	'CANNOT_MOVE_SAME_FORUM'=> 'You cannot move a topic to the forum it’s already in',
 	'CANNOT_WARN_ANONYMOUS'	=> 'Та бүртгэгдээгүй хэрэглэгч болон зочдод сануулга өгч чадахгүй',
 	'CANNOT_WARN_SELF'		=> 'Та өөртөө сануулга өгч чадахгүй',
 	'CAN_LEAVE_BLANK'		=> 'This can be left blank.',
 	'CHANGE_POSTER'			=> 'Бичэгчийг солих',
+	'CLOSE_PM_REPORT'		=> 'Close PM report',
+	'CLOSE_PM_REPORT_CONFIRM'	=> 'Are you sure you want to close the selected PM report?',
+	'CLOSE_PM_REPORTS'		=> 'Close PM reports',
+	'CLOSE_PM_REPORTS_CONFIRM'	=> 'Are you sure you want to close the selected PM reports?'
 	'CLOSE_REPORT'			=> 'Мэдээллийг хаах',
 	'CLOSE_REPORT_CONFIRM'	=> 'Та сонгосон мэдээллийн хаах уу?',
 	'CLOSE_REPORTS'			=> 'Мэдээллийг хаах',
 	'CLOSE_REPORTS_CONFIRM'	=> 'Та сонгосон мэдээллийг хаах уу?',
 
+	'DELETE_PM_REPORT'			=> 'Delete PM report',
+	'DELETE_PM_REPORT_CONFIRM'	=> 'Are you sure you want to delete the selected PM report?',
+	'DELETE_PM_REPORTS'			=> 'Delete PM reports',
+	'DELETE_PM_REPORTS_CONFIRM'	=> 'Are you sure you want to delete the selected PM reports?',
 	'DELETE_POSTS'				=> 'Бичлэгүүдийг устгах',
-	'DELETE_POSTS_CONFIRM'		=> 'Та энэ бичлэгүүдийг устгах уу?',
-	'DELETE_POST_CONFIRM'		=> 'Та энэ бичлэгийг устгах уу?',
 	'DELETE_REPORT'				=> 'Мэдээллийг устгах',
 	'DELETE_REPORT_CONFIRM'		=> 'Та сонгосон мэдээллийг устгахыг хүсч байна уу?',
 	'DELETE_REPORTS'			=> 'Мэдээллийг устгах',
 	'DELETE_REPORTS_CONFIRM'	=> 'Та сонгосон мэдээллийг устгахыг хүсч байна уу?',
 	'DELETE_SHADOW_TOPIC'		=> 'Сэдвийн сүүдрийг устгах',
 	'DELETE_TOPICS'				=> 'Сонгосон сэдвийг устгах',
-	'DELETE_TOPICS_CONFIRM'		=> 'Та энэ сэдэвүүдийг устгах уу?',
-	'DELETE_TOPIC_CONFIRM'		=> 'Та энэ сэдвийг устгах уу?',
 	'DISAPPROVE'				=> 'Буруушаах',
 	'DISAPPROVE_REASON'			=> 'Reason for disapproval',
 	'DISAPPROVE_POST'			=> 'Бичлэг буруушаах',
@@ -110,9 +117,10 @@ $lang = array_merge($lang, array(
 	'LATEST_WARNING_TIME'		=> 'Сүүлийн сануулгын огноо',
 	'LATEST_WARNINGS'			=> 'Сүүлийн 5 сануулга',
 	'LEAVE_SHADOW'				=> 'Leave shadow topic in place',
-	'LIST_REPORT'				=> '1 мэдээлэл',
-	'LIST_REPORTS'				=> '%d мэдээлэл',
-	'LOCK'						=> 'Цоожлох',
+	'LIST_REPORTS'				=> array(
+		1	=> '%d report',
+		2	=> '%d reports',
+	),	'LOCK'						=> 'Цоожлох',
 	'LOCK_POST_POST'			=> 'Бичлэгийг цоожлох',
 	'LOCK_POST_POST_CONFIRM'	=> 'Are you sure you want to prevent editing this post?',
 	'LOCK_POST_POSTS'			=> 'Сонгосон бичлэгийг цоожлох',
@@ -122,6 +130,7 @@ $lang = array_merge($lang, array(
 	'LOCK_TOPICS_CONFIRM'		=> 'Та сонгосон бүх сэдвийг цоожлох уу?',
 	'LOGS_CURRENT_TOPIC'		=> 'Currently viewing logs of:',
 	'LOGIN_EXPLAIN_MCP'			=> 'Форумыг зохицуулахын тулд нэвтэрнэ үү.',
+	'LOGVIEW_VIEWPOST'			=> 'View post',
 	'LOGVIEW_VIEWTOPIC'			=> 'Сэдвийг үзэх',
 	'LOGVIEW_VIEWLOGS'			=> 'View topic log',
 	'LOGVIEW_VIEWFORUM'			=> 'Форум үзэх',
@@ -169,6 +178,13 @@ $lang = array_merge($lang, array(
 	'MCP_NOTES_USER'				=> 'Хэрэглэгчийг үзэх',
 
 	'MCP_POST_REPORTS'				=> 'Reports issued on this post',
+
+	'MCP_PM_REPORTS'				=> 'Reported PMs',
+	'MCP_PM_REPORT_DETAILS'			=> 'PM Report details',
+	'MCP_PM_REPORTS_CLOSED'			=> 'Closed PM reports',
+	'MCP_PM_REPORTS_CLOSED_EXPLAIN'	=> 'This is a list of all reports about private messages which have previously been resolved.',
+	'MCP_PM_REPORTS_OPEN'			=> 'Open PM reports',
+	'MCP_PM_REPORTS_OPEN_EXPLAIN'	=> 'This is a list of all reported private messages which are still to be handled.',
 	
 	'MCP_REPORTS'					=> 'Мэдээлэгдсэн бичлэг',
 	'MCP_REPORT_DETAILS'			=> 'Мэдээллийг үзэх',
@@ -183,6 +199,10 @@ $lang = array_merge($lang, array(
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'This is a list of all posts which require approving before they will be visible to users',
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Сайшаал хүлээж буй сэдэв',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'This is a list of all topics which require approving before they will be visible to users',
+	'MCP_QUEUE_DELETED_POSTS'				=> 'Deleted posts',
+	'MCP_QUEUE_DELETED_POSTS_EXPLAIN'		=> 'This is a list of all soft deleted posts. You can restore or permanently delete the posts from this screen.',
+	'MCP_QUEUE_DELETED_TOPICS'				=> 'Deleted topics',
+	'MCP_QUEUE_DELETED_TOPICS_EXPLAIN'		=> 'This is a list of all soft deleted topics. You can restore or permanently delete the topics from this screen.',
 
 	'MCP_VIEW_USER'			=> 'View warnings for a specific user',
 
@@ -192,7 +212,6 @@ $lang = array_merge($lang, array(
 	'MCP_WARN_POST'			=> 'Warn for specific post',
 	'MCP_WARN_USER'			=> 'Сануулга өгөх',
 
-	'MERGE_POSTS'			=> 'Бичлэгүүдийг хуваах',
 	'MERGE_POSTS_CONFIRM'	=> 'Are you sure you want to merge the selected posts?',
 	'MERGE_TOPIC_EXPLAIN'	=> 'Using the form below you can merge selected posts into another topic. These posts will not be reordered and will appear as if the users posted them to the new topic.<br />Please enter the destination topic id or click on “Select topic” to search for one.',
 	'MERGE_TOPIC_ID'		=> 'Destination topic identification number',
@@ -221,17 +240,33 @@ $lang = array_merge($lang, array(
 	'NO_POST'						=> 'You have to select a post in order to warn the user for a post',
 	'NO_POST_REPORT'				=> 'This post was not reported.',
 	'NO_POST_SELECTED'				=> 'You must select at least one post to perform this action',
+	'NO_POSTS_DELETED'				=> 'There are no deleted posts.',
+	'NO_POSTS_QUEUE'				=> 'There are no posts waiting for approval.',
 	'NO_REASON_DISAPPROVAL'			=> 'Please give an appropriate reason for disapproval',
 	'NO_REPORT'						=> 'Мэдээлэл байхгүй',
 	'NO_REPORTS'					=> 'Мэдээлэл алга байна',
 	'NO_REPORT_SELECTED'			=> 'You must select at least one report to perform this action.',
 	'NO_TOPIC_ICON'					=> 'None',
 	'NO_TOPIC_SELECTED'				=> 'You must select at least one topic to perform this action.',
+	'NO_TOPICS_DELETED'				=> 'There are no deleted topics.',
 	'NO_TOPICS_QUEUE'				=> 'Сэдэв байхгүй',
 
 	'ONLY_TOPIC'			=> '"%s" зөвхөн сэдэв',
 	'OTHER_USERS'			=> 'Бусад хэрэглэгч энэ IP хаягаас бичсэн байна',
 
+	'QUICKMOD_ACTION_NOT_ALLOWED' => "%s not allowed as quickmod",
+
+	'PM_REPORT_CLOSED_SUCCESS'	=> 'The selected PM report has been closed successfully.',
+	'PM_REPORT_DELETED_SUCCESS'	=> 'The selected PM report has been deleted successfully.',
+	'PM_REPORTED_SUCCESS'		=> 'This private message has been successfully reported.',
+	'PM_REPORTS_CLOSED_SUCCESS'	=> 'The selected PM reports have been closed successfully.',
+	'PM_REPORTS_DELETED_SUCCESS'=> 'The selected PM reports have been deleted successfully.',
+	'PM_REPORTS_TOTAL'			=> array(
+		0	=> 'There are no PM reports to review.',
+		1	=> 'In total there is <strong>1</strong> PM report to review.',
+		2	=> 'In total there are <strong>%d</strong> PM reports to review.',
+	),
+	'PM_REPORT_DETAILS'			=> 'Private message report details',
 	'POSTER'					=> 'Бичигч',
 	'POSTS_APPROVED_SUCCESS'	=> 'Сонгосон бичлэг сайшаагдлаа',
 	'POSTS_DELETED_SUCCESS'		=> 'Сонгосон бичлэг мэдээллийн сангаас амжилттай устгагдлаа',
@@ -257,8 +292,11 @@ $lang = array_merge($lang, array(
 	'REPORTED_ON_DATE'			=> 'on',
 	'REPORTS_CLOSED_SUCCESS'	=> 'The selected reports have been closed successfully.',
 	'REPORTS_DELETED_SUCCESS'	=> 'The selected reports have been deleted successfully.',
-	'REPORTS_TOTAL'				=> 'In total there are <strong>%d</strong> reports to review',
-	'REPORTS_ZERO_TOTAL'		=> 'Одоогоор мэдээлэл алга',
+	'REPORTS_TOTAL'				=> array(
+		0	=> 'There are no reports to review.',
+		1	=> 'In total there is <strong>1</strong> report to review.',
+		2	=> 'In total there are <strong>%d</strong> reports to review.',
+	),
 	'REPORT_CLOSED'				=> 'This report has previously been closed.',
 	'REPORT_CLOSED_SUCCESS'		=> 'Сонгосон мэдээлэл амжилттай хаагдлаа.',
 	'REPORT_DELETED_SUCCESS'	=> 'Сонгосон мэдээлэл амжилттай устгагдлаа.',
@@ -270,11 +308,20 @@ $lang = array_merge($lang, array(
 	'REPORT_POST_EXPLAIN'		=> 'Use this form to report the selected post to the forum moderators and board administrators. Reporting should generally be used only if the post breaks forum rules.',
 	'REPORT_REASON'				=> 'Report reason',
 	'REPORT_TIME'				=> 'Мэдээллийн огноо',
-	'REPORT_TOTAL'				=> 'In total there is <strong>1</strong> report to review',
+	'RESTORE'					=> 'Restore',
+	'RESTORE_POST'				=> 'Restore post',
+	'RESTORE_POST_CONFIRM'		=> 'Are you sure you want to restore this post?',
+	'RESTORE_POSTS'				=> 'Restore posts',
+	'RESTORE_POSTS_CONFIRM'		=> 'Are you sure you want to restore the selected posts?',
+	'RESTORE_TOPIC'				=> 'Restore topic',
+	'RESTORE_TOPIC_CONFIRM'		=> 'Are you sure you want to restore this topic?',
+	'RESTORE_TOPICS'			=> 'Restore topics',
+	'RESTORE_TOPICS_CONFIRM'	=> 'Are you sure you want to restore the selected topics?',
 	'RESYNC'					=> 'Resync',
 	'RETURN_MESSAGE'			=> '%sЗурвас руу буцах%s',
 	'RETURN_NEW_FORUM'			=> '%sШинэ форум луу буцах%s',
 	'RETURN_NEW_TOPIC'			=> '%sШинэ сэдэв рүү буцах%s',
+	'RETURN_PM'					=> '%sReturn to the private message%s',
 	'RETURN_POST'				=> '%sБичлэг рүү буцахt%s',
 	'RETURN_QUEUE'				=> '%sReturn to the queue%s',
 	'RETURN_REPORTS'			=> '%sМэдээлэл рүү буцах%s',
@@ -302,6 +349,7 @@ $lang = array_merge($lang, array(
 	'SPLIT_TOPIC_BEYOND_CONFIRM'		=> 'Are you sure you want to split this topic at the selected post?',
 	'SPLIT_TOPIC_EXPLAIN'				=> 'Using the form below you can split a topic in two, either by selecting the posts individually or by splitting at a selected post',
 
+	'THIS_PM_IP'				=> 'IP for this private message',
 	'THIS_POST_IP'				=> 'Энэ бичлэгийн IP хаяг',
 	'TOPICS_APPROVED_SUCCESS'	=> 'The selected topics have been approved',
 	'TOPICS_DELETED_SUCCESS'	=> 'The selected topics have been successfully removed from the database',
@@ -309,6 +357,7 @@ $lang = array_merge($lang, array(
 	'TOPICS_FORKED_SUCCESS'		=> 'The selected topics have been copied successfully',
 	'TOPICS_LOCKED_SUCCESS'		=> 'Сонгосон сэдэв цоожлогдлоо',
 	'TOPICS_MOVED_SUCCESS'		=> 'The selected topics have been moved successfully',
+	'TOPICS_RESTORED_SUCCESS'	=> 'The selected topics have been restored successfully.',
 	'TOPICS_RESYNC_SUCCESS'		=> 'The selected topics have been resynchronised',
 	'TOPICS_TYPE_CHANGED'		=> 'Сэдвийн төрөлийг амжилттай солилоо.',
 	'TOPICS_UNLOCKED_SUCCESS'	=> 'Сонгосон сэдэв нээгдлээ',
@@ -319,6 +368,7 @@ $lang = array_merge($lang, array(
 	'TOPIC_LOCKED_SUCCESS'		=> 'Сонгосон сэдэв цоожлогдлоо',
 	'TOPIC_MOVED_SUCCESS'		=> 'Сонгосон сэдэв амжилттай зөөгдлөө',
 	'TOPIC_NOT_EXIST'			=> 'The topic you selected does not exist',
+	'TOPIC_RESTORED_SUCCESS'	=> 'The selected topic has been restored successfully.',
 	'TOPIC_RESYNC_SUCCESS'		=> 'The selected topic has been resynchronised',
 	'TOPIC_SPLIT_SUCCESS'		=> 'The selected topic has been split successfully',
 	'TOPIC_TIME'				=> 'Сэдвийн огноо',
@@ -326,9 +376,11 @@ $lang = array_merge($lang, array(
 	'TOPIC_UNLOCKED_SUCCESS'	=> 'The selected topic has been unlocked',
 	'TOTAL_WARNINGS'			=> 'Нийт сануулга',
 
-	'UNAPPROVED_POSTS_TOTAL'		=> 'Нийт <strong>%d</strong> сайшаал хүлээж байна',
-	'UNAPPROVED_POSTS_ZERO_TOTAL'	=> 'Сайшаал хүлээж байгаа бичлэг алга',
-	'UNAPPROVED_POST_TOTAL'			=> 'Одоо <strong>1</strong> сайшаал хүлээж байна',
+	'UNAPPROVED_POSTS_TOTAL'		=> array(
+		0	=> 'There are no posts waiting for approval.',
+		1	=> 'In total there is <strong>1</strong> post waiting for approval.',
+		2	=> 'In total there are <strong>%d</strong> posts waiting for approval.',
+	),
 	'UNLOCK'						=> 'Нээх',
 	'UNLOCK_POST'					=> 'Бичлэгийг нээх',
 	'UNLOCK_POST_EXPLAIN'			=> 'Allow editing',
@@ -346,13 +398,15 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_ADDED'			=> 'Хэрэглэгчид сануулга өглөө.',
 
 	'VIEW_DETAILS'			=> 'Мэдээллийг үзэх',
+	'VIEW_PM'				=> 'View private message',
+	'VIEW_POST'				=> 'View post',
 
 	'WARNED_USERS'			=> 'Сануулга авсан хэрэглэгчид',
 	'WARNED_USERS_EXPLAIN'	=> 'This is a list of users with unexpired warnings issued to them',
 	'WARNING_PM_BODY'		=> 'The following is a warning which has been issued to you by an administrator or moderator of this site.[quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Board warning issued',
 	'WARNING_POST_DEFAULT'	=> 'This is a warning regarding the following post made by you: %s',
-	'WARNINGS_ZERO_TOTAL'	=> 'Сануулга алга байна',
+	'NO_WARNINGS'	=> 'No warnings exist.',
 
 	'YOU_SELECTED_TOPIC'	=> 'You selected topic number %d: %s',
 
@@ -371,5 +425,3 @@ $lang = array_merge($lang, array(
 		)
 	),
 ));
-
-?>

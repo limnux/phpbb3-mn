@@ -47,20 +47,26 @@ $lang = array_merge($lang, array(
 	'LOGIN_NOTIFY_FORUM'	=> 'Сэдвийг уншихын тулд нэвтрэн орно уу.',
 
 	'MARK_TOPICS_READ'		=> 'Уншсан болгож тэмдэглэх',
-	
+
 	'NEW_POSTS_HOT'			=> 'Шинэ бичлэг [ Түгээмэл]',
 	'NEW_POSTS_LOCKED'		=> 'Шинэ бичлэг [ Цоожтой ]',
 	'NO_NEW_POSTS_HOT'		=> 'Шинэ бичлэг алга [ Түгээмэл]',
 	'NO_NEW_POSTS_LOCKED'	=> 'Шинэ бичлэг алга [ Цоожтой ]',
 	'NO_READ_ACCESS'		=> 'Та нэвтрэн орж форумын сэдвүүдийг уншина уу.',
+	'NO_FORUMS_IN_CATEGORY'	=> 'This category has no forums.',
+	'NO_UNREAD_POSTS_HOT'		=> 'No unread posts [ Popular ]',
+	'NO_UNREAD_POSTS_LOCKED'	=> 'No unread posts [ Locked ]',
 
 	'POST_FORUM_LOCKED'		=> 'Форум цоожтой',
 
 	'TOPICS_MARKED'			=> 'Форумын сэдэвүүдийг уншсан болгож тэмдэглэлээ',
 
-	'VIEW_FORUM'			=> 'Форум үзэх',
-	'VIEW_FORUM_TOPIC'		=> '1 сэдэв',
-	'VIEW_FORUM_TOPICS'		=> '%d сэдэв',
-));
+	'UNREAD_POSTS_HOT'		=> 'Unread posts [ Popular ]',
+	'UNREAD_POSTS_LOCKED'	=> 'Unread posts [ Locked ]',
 
-?>
+	'VIEW_FORUM'			=> 'Форум үзэх',
+	'VIEW_FORUM_TOPICS'		=> array(
+		1	=> '%d сэдэв',
+		2	=> '%d сэдэв',
+	),
+));
